@@ -6,7 +6,7 @@ export const Educacion = () => {
     <div className="col-md-4">
         <h1>Formación Académica</h1>
     </div>
-    <div className="col-md-8 mt-5">
+    <div className="col-md-8 mt-5 text-start">
         <ul>
             <li>
                 <h4>Licenciatura en Sistemas</h4>
