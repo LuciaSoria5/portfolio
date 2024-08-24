@@ -1,8 +1,6 @@
 import React from 'react'
-import { Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
+import { Contacto, Experiencia, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
 import { Grid } from '@mui/material'
-import { Navbar } from '../components/Navbar'
-import { Experiencia } from '../components/Experiencia'
 
 export const MiPortfolio = () => {
   return (
@@ -20,6 +18,7 @@ export const MiPortfolio = () => {
         <Tecnologias id="tecnologias" />
         <Experiencia />
         <Proyectos id="proyectos" />
+        <Contacto />
     </Grid>
   )
 }
