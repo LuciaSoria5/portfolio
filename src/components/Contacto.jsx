@@ -28,19 +28,16 @@ export const Contacto = () => {
         ¡Contactame!
         </Typography>
         <IconButton
-            // component="label"
             role="button"
             variant="contained"
-            // startIcon={}
+            onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
         >
             <LinkedInIcon fontSize="large"/>
         </IconButton>
         <IconButton
-            // component="label"
             role="button"
             variant="contained"
-            
-            // startIcon={}
+            onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
         >
             <GitHubIcon fontSize="large"/>
         </IconButton>

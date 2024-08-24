@@ -15,12 +15,13 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
           alt={ titulo }
         />
         <CardContent>
-          <Typography color="primary.color" gutterBottom variant="h5" component="div">
+          <Typography color="primary.color" gutterBottom variant="h4" component="div">
             { titulo }
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body" color="text.secondary">
             { descripcion }
           </Typography>
+          <br/>
           <Link 
             color="primary.color"
             underline="hover" 
