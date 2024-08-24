@@ -33,7 +33,6 @@ export const Navbar = () => {
               direction="row" 
               justifyContent="end"
               // alignItems="center"
-              ml="0"
             >
               <Button
                 component="label"
