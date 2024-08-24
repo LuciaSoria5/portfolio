@@ -1,6 +1,7 @@
 import React from 'react'
 import { Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
 import { Grid } from '@mui/material'
+import { Navbar } from '../components/Navbar'
 
 export const MiPortfolio = () => {
   return (
@@ -12,6 +13,7 @@ export const MiPortfolio = () => {
         color: 'primary.color',
       }}
     >
+        <Navbar id="navbar"/>
         <Presentacion id="presentacion" />
         <SobreMi id="sobreMi" />
         <Tecnologias id="tecnologias" />

@@ -15,7 +15,7 @@ export const Proyectos = () => {
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 2 }} >
             {
               listaProyectos.map( proyecto => 
-                <Grid item md={4}>
+                <Grid item md={4} key={ proyecto.titulo }>
                   <Proyecto 
                     titulo={ proyecto.titulo } 
                     descripcion={ proyecto.descripcion}
