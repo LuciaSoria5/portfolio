@@ -1,7 +1,7 @@
 import React from 'react'
 import { proyectos } from '../proyectos/data'
 import { Proyecto } from './subcomponents/Proyecto';
-import { Container } from '@mui/material';
+import { Grid } from '@mui/material';
 
 export const Proyectos = () => {
 
@@ -12,20 +12,20 @@ export const Proyectos = () => {
         <div className="col-6 proyectos" >
             <h2>Mis proyectos</h2>
         </div>
-        <Container>
+        <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 1, md: 2 }} >
             {
               listaProyectos.map( proyecto => 
-                // <div className="col-3">
+                <Grid item md={4}>
                   <Proyecto 
                     titulo={ proyecto.titulo } 
                     descripcion={ proyecto.descripcion}
                     repositorio={ proyecto.repositorio}
                     imagen={ proyecto.imagen} 
                   />
-                // </div>s
+                </Grid>
               )
             }
-        </Container>
+        </Grid>
     </div>
   )
 }

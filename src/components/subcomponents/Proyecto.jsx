@@ -1,5 +1,5 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material"
-import { Link } from "react-router-dom";
+import { Card, CardActionArea, CardContent, CardMedia, Link, Typography } from "@mui/material"
+
 
 export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
 
@@ -15,13 +15,19 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
           alt={ titulo }
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography color="primary.color" gutterBottom variant="h5" component="div">
             { titulo }
           </Typography>
           <Typography variant="body2" color="text.secondary">
             { descripcion }
           </Typography>
-          <Link href={repositorio}>Ver el repositorio GitHub</Link>
+          <Link 
+            color="primary.color"
+            underline="hover" 
+            href={repositorio}
+            target="_blank"
+            rel="noreferrer" 
+          >Ver el repositorio GitHub</Link>
         </CardContent>
       </CardActionArea>
     </Card>
