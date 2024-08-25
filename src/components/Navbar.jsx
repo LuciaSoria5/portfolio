@@ -1,8 +1,9 @@
 import { AppBar, Button, Grid, IconButton, Toolbar, Typography } from '@mui/material'
 import Face3Icon from '@mui/icons-material/Face3';
-import SchoolIcon from '@mui/icons-material/School';
+// import SchoolIcon from '@mui/icons-material/School';
 import ComputerIcon from '@mui/icons-material/Computer';
-import WorkIcon from '@mui/icons-material/Work';
+// import WorkIcon from '@mui/icons-material/Work';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 export const Navbar = () => {
   return (
@@ -42,7 +43,7 @@ export const Navbar = () => {
               >
                 Sobre mi
               </Button>
-              <Button
+              {/* <Button
                 component="label"
                 role="button"
                 variant="contained"
@@ -57,7 +58,7 @@ export const Navbar = () => {
                 startIcon={<WorkIcon />}
               >
                 Experiencia
-              </Button>
+              </Button> */}
               <Button
                 component="label"
                 role="button"
@@ -65,6 +66,14 @@ export const Navbar = () => {
                 startIcon={<ComputerIcon />}
               >
                 Proyectos
+              </Button>
+              <Button
+                component="label"
+                role="button"
+                variant="contained"
+                startIcon={<ContactPageIcon />}
+              >
+                Contacto
               </Button>
 
             </Grid>
