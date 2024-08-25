@@ -4,8 +4,12 @@ import Face3Icon from '@mui/icons-material/Face3';
 import ComputerIcon from '@mui/icons-material/Computer';
 // import WorkIcon from '@mui/icons-material/Work';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import { useScroll } from '../hooks/useScroll';
 
-export const Navbar = () => {
+export const Navbar = ({ posiciones= {} }) => {
+
+  console.log(posiciones)
+  const { scrollToTop, scrollToBottom, scrollTo } = useScroll();
   return (
     <AppBar 
         position="fixed"
@@ -17,7 +21,6 @@ export const Navbar = () => {
             <Grid 
               container 
               direction="row" 
-              // justifyContent="space-between"
               alignItems="center"
             >
               <Typography 
@@ -33,45 +36,48 @@ export const Navbar = () => {
               container 
               direction="row" 
               justifyContent="end"
-              // alignItems="center"
             >
               <Button
                 component="label"
                 role="button"
                 variant="contained"
                 startIcon={<Face3Icon />}
+                onClick={ () => scrollToTop({
+                  duration: 20,
+                  smooth: true,
+                  delay: 0,
+                  isDynamic: true,
+                }) }
               >
                 Sobre mi
               </Button>
-              {/* <Button
-                component="label"
-                role="button"
-                variant="contained"
-                startIcon={<SchoolIcon />}
-              >
-                Conocimientos
-              </Button>
-              <Button
-                component="label"
-                role="button"
-                variant="contained"
-                startIcon={<WorkIcon />}
-              >
-                Experiencia
-              </Button> */}
+
               <Button
                 component="label"
                 role="button"
                 variant="contained"
                 startIcon={<ComputerIcon />}
+                onClick={ () => scrollTo( posiciones.proyectos.top, {
+                  duration: 20,
+                  smooth: true,
+                  delay: 0,
+                  isDynamic: true,
+                }) }
               >
                 Proyectos
               </Button>
+
               <Button
                 component="label"
                 role="button"
                 variant="contained"
                 startIcon={<ContactPageIcon />}
+                onClick={ () => scrollToBottom({
+                  duration: 20,
+                  smooth: true,
+                  delay: 0,
+                  isDynamic: true,
+                }) }
               >
                 Contacto
               </Button>

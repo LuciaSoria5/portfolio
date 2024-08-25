@@ -1,14 +1,14 @@
-import React from 'react'
+import { forwardRef } from 'react';
 import { proyectos } from '../proyectos/data'
 import { Proyecto } from './subcomponents/Proyecto';
 import { Grid, Typography } from '@mui/material';
 
-export const Proyectos = () => {
+export const Proyectos = forwardRef((props, ref) => {
 
   const listaProyectos = proyectos;
 
   return (
-    <div className="row mt-5 justify-content-center align-items-center">
+    <div ref= { ref }className="row mt-5 justify-content-center align-items-center">
         <Grid 
           container 
           direction="row" 
@@ -44,4 +44,4 @@ export const Proyectos = () => {
         </Grid>
     </div>
   )
-}
+});
