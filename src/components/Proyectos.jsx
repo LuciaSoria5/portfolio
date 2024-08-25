@@ -9,32 +9,35 @@ export const Proyectos = forwardRef((props, ref) => {
 
   return (
     // <div ref= { ref }>
-        <Grid 
+    <Grid 
         ref={ ref }
           container 
           direction="row" 
           justifyContent="center"
           alignItems="center"
           mt={5}
+          ml={5}
+          display='flex'
+          sx={{ flexGrow: 1 }}
         >
-          <Typography 
-            variant="h3" 
-            noWrap 
-            component="div"
-          >
+          <Typography variant="h3" component="div">
             Mis proyectos
           </Typography>
-        {/* </Grid> */}
         <Grid 
           container 
           rowSpacing={2} 
-          columnSpacing={{ xs: 1, sm: 1, md: 2 }} 
+          columnSpacing={2} 
           justifyContent="center"
-          alignItems="center"
+          alignItems="top"
         >
             {
               listaProyectos.map( proyecto => 
-                <Grid item md={4} key={ proyecto.titulo }>
+                <Grid 
+                  item 
+                  sm={3} md={4} lg={3}
+                  mt={2}
+                  key={ proyecto.titulo }
+                >
                   <Proyecto 
                     titulo={ proyecto.titulo } 
                     descripcion={ proyecto.descripcion}

@@ -6,14 +6,18 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen, sitio='' })
     const ImgUrl = `./proyectos/${ imagen }`;
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={ ImgUrl }
-          alt={ titulo }
-        />
+    <Card >
+      <CardMedia
+        component="img"
+        image={ ImgUrl }
+        alt={ titulo }
+        sx={{
+          width: 'auto',
+          height: '40%',
+          maxWidth: '100%',
+        }}
+      />
+      <CardActionArea onClick={ () => window.open(repositorio, "_blank", "noopener noreferrer") }>
         <CardContent>
           <Typography color="primary.color" gutterBottom variant="h4" component="div">
             { titulo }
@@ -36,7 +40,7 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen, sitio='' })
             </>
             )
           }
-          <br/>
+          {/* <br/>
           <Link 
             color="primary.color"
             underline="hover" 
@@ -44,7 +48,7 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen, sitio='' })
             target="_blank"
             rel="noreferrer" 
           >Ver el repositorio GitHub
-          </Link>
+          </Link> */}
         </CardContent>
       </CardActionArea>
     </Card>
