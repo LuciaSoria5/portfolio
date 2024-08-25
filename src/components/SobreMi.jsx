@@ -1,15 +1,30 @@
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 export const SobreMi = () => {
   return (
-    <div className="row mt-5 justify-content-center align-items-center ">
-        <div className="col-md-6">
-            <img src="/naruto.png" alt="Imagen"/>
-        </div>
-        <div className="col-md-6 mt-5">
-            <h1 className="sobre-mi ms-4">¡Mucho gusto!</h1>
-            <p className="ms-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a cumque ut neque natus dicta tempore non quia eveniet est explicabo voluptas commodi necessitatibus, tenetur maiores doloribus esse voluptatibus ullam?</p>
-        </div>
-    </div>
+    <Grid 
+    // className="row mt-5 justify-content-center align-items-center"
+      container
+      direction="row" 
+      mt={5}
+      justifyContent="center"
+      alignItems="center"
+      display='flex'
+      spacing={2}
+    >
+      <Grid item md={4} mr={2} ml={2}>
+        <img src="/naruto.png" alt="Imagen"/>
+      </Grid>
+
+      <Grid item md={4} sx={{ textAlign: 'center' }} >
+        <Typography variant="h2" component="div">
+          Sobre mi:
+        </Typography>
+        <Typography variant="body1" component="div">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reprehenderit, aut fugit voluptatum harum adipisci! Voluptate beatae ipsum ratione, repellendus quae officiis fugiat quis adipisci, expedita fuga dignissimos ut! Quam.
+        </Typography>
+      </Grid>
+    </Grid>
   )
 }
