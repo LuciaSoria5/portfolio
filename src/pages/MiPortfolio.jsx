@@ -16,7 +16,6 @@ export const MiPortfolio = () => {
         <Presentacion id="presentacion" />
         <SobreMi id="sobreMi" />
         <Tecnologias id="tecnologias" />
-        <Experiencia />
         <Proyectos id="proyectos" />
         <Contacto />
     </Grid>
