@@ -26,6 +26,7 @@ export const MiPortfolio = () => {
     direction="row" 
     justifyContent="center"
     alignItems="center"
+    width="100%"
     sx={{ 
       // backgroundColor: 'primary.main', 
       color: 'primary.color',

@@ -8,12 +8,14 @@ export const Proyectos = forwardRef((props, ref) => {
   const listaProyectos = proyectos;
 
   return (
-    <div ref= { ref } className="row mt-5 justify-content-center align-items-center">
+    // <div ref= { ref }>
         <Grid 
+        ref={ ref }
           container 
           direction="row" 
           justifyContent="center"
           alignItems="center"
+          mt={5}
         >
           <Typography 
             variant="h3" 
@@ -22,7 +24,7 @@ export const Proyectos = forwardRef((props, ref) => {
           >
             Mis proyectos
           </Typography>
-        </Grid>
+        {/* </Grid> */}
         <Grid 
           container 
           rowSpacing={2} 
@@ -44,6 +46,6 @@ export const Proyectos = forwardRef((props, ref) => {
               )
             }
         </Grid>
-    </div>
+    </Grid>
   )
 });

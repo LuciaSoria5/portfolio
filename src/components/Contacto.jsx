@@ -16,6 +16,7 @@ export const Contacto = () => {
         direction="row" 
         justifyContent="center"
         alignItems="center"
+        mt={10}
         sx={{
             height:"10%",
           }}

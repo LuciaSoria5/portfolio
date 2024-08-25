@@ -6,11 +6,15 @@ export const Presentacion = () => {
     // <div className="row mt-5">
       <Grid 
         container
-        mt={10}
+        mt={7}
         direction="row" 
         justifyContent="center"
         alignItems="center"
         display='flex'
+        spacing={2}
+        // ml={5}
+        wrap="nowrap"
+        sx={{ flexGrow: 1 }}
       >
         <Grid 
           item 
@@ -49,9 +53,16 @@ export const Presentacion = () => {
           </Box>
         </Grid>
 
-        <Grid item md={5} >
-              <img src="/naruto.png" alt="Imagen"/>
-        </Grid>
+        <Box
+          component="img"
+          src="/naruto.png"
+          alt="Imagen"
+          sx={{
+            width: '40%',
+            height: 'auto',
+            maxWidth: '100%',
+          }}
+        />
       </Grid>
     // </div>
   )
