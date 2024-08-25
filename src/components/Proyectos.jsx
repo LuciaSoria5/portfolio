@@ -8,7 +8,7 @@ export const Proyectos = forwardRef((props, ref) => {
   const listaProyectos = proyectos;
 
   return (
-    <div ref= { ref }className="row mt-5 justify-content-center align-items-center">
+    <div ref= { ref } className="row mt-5 justify-content-center align-items-center">
         <Grid 
           container 
           direction="row" 
@@ -27,6 +27,8 @@ export const Proyectos = forwardRef((props, ref) => {
           container 
           rowSpacing={2} 
           columnSpacing={{ xs: 1, sm: 1, md: 2 }} 
+          justifyContent="center"
+          alignItems="center"
         >
             {
               listaProyectos.map( proyecto => 

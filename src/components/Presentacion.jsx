@@ -1,29 +1,52 @@
-import { Grid } from '@mui/material'
-import React from 'react'
+import { Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import StarIcon from '@mui/icons-material/Star';
 
 export const Presentacion = () => {
   return (
-    <Grid 
-      className="row mt-5 align-items-center"
-    >
-        <div className="col-md-6 mt-5">
-            <h3 className="titulo">¡Hola! Mi nombre es</h3>
-            <h1 className="titulo">Lucía Soria</h1>
-            <hr/>
-            <h2>
-            <ul className="items-descripcion list-unstyled">
-                <li>Desarrolladora full stack</li>
-                <li>Docente de Programación</li>
-            </ul>
-            </h2>
-            {/* <ul className="items-descripcion">
-                <li>Desarrolladora full stack</li>
-                <li>Docente de Programación</li>
-            </ul> */}
-        </div>
-        <div className="col-md-6">
-            <img src="/naruto.png" alt="Imagen"/>
-        </div>
-    </Grid>
+    <div className="row mt-5">
+      <Grid 
+        container 
+        direction="row mt-5" 
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item md={6} lg={10} sx={{ textAlign: 'center' }} >
+          <Typography variant="h3" component="div">
+            ¡Hola! Mi nombre es
+          </Typography>
+          <br/>
+          <Typography variant="h1" component="div">
+            Lucía Soria
+          </Typography>
+          <hr/>
+
+          <List>
+            <ListItem>
+                <ListItemIcon>
+                  <StarIcon fontSize="large" sx={{ color:"primary.color"}} />
+                </ListItemIcon>
+                <ListItemText 
+                  primary="Desarrolladora Full stack"
+                  primaryTypographyProps={{ variant: 'h4'}}
+                />
+            </ListItem>
+            <ListItem>
+                <ListItemIcon>
+                  <StarIcon  fontSize="large" sx={{ color:"primary.color"}} />
+                </ListItemIcon>
+                <ListItemText 
+                  primary="Docente de Programación"
+                  primaryTypographyProps={{ variant: 'h4' }}
+                />
+            </ListItem>
+          </List>
+
+        </Grid>
+        <Grid item md={6} lg={2} >
+          {/* // className="col-md-6"> */}
+              <img src="/naruto.png" alt="Imagen"/>
+        </Grid>
+      </Grid>
+    </div>
   )
 }

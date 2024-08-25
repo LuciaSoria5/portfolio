@@ -22,13 +22,21 @@ export const MiPortfolio = () => {
 
   return (
     <Grid 
+    container 
+    direction="row" 
+    justifyContent="center"
+    alignItems="center"
+    sx={{ 
+      // backgroundColor: 'primary.main', 
+      color: 'primary.color',
+      mt: 7
+    }}
+  >
+    {/* <Grid 
       className="container text-center" 
       style={{"height": "100vh"}} 
-      sx={{ 
-        backgroundColor: 'primary.main', 
-        color: 'primary.color',
-      }}
-    >
+
+    > */}
         <Navbar id="navbar" posiciones={{ proyectos: proyectosPosicion }}/>
         <Presentacion id="presentacion" />
         <SobreMi id="sobreMi" />
