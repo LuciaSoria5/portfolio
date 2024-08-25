@@ -1,7 +1,7 @@
 import { Card, CardActionArea, CardContent, CardMedia, Link, Typography } from "@mui/material"
 
 
-export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
+export const Proyecto = ({ titulo, descripcion, repositorio, imagen, sitio='' }) => {
 
     const ImgUrl = `./proyectos/${ imagen }`;
 
@@ -21,6 +21,21 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
           <Typography variant="body" color="text.secondary">
             { descripcion }
           </Typography>
+          { 
+          sitio && (
+            <>
+              <br/>
+              <Link
+                  color="primary.color"
+                  underline="hover" 
+                  href={sitio}
+                  target="_blank"
+                  rel="noreferrer" 
+                >Ir al sitio web
+              </Link>
+            </>
+            )
+          }
           <br/>
           <Link 
             color="primary.color"
@@ -28,7 +43,8 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen }) => {
             href={repositorio}
             target="_blank"
             rel="noreferrer" 
-          >Ver el repositorio GitHub</Link>
+          >Ver el repositorio GitHub
+          </Link>
         </CardContent>
       </CardActionArea>
     </Card>

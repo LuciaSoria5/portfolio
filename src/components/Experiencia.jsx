@@ -18,12 +18,13 @@ export const Experiencia = () => {
                     </ul>
                 </li>
                 <li>
-                    <h4>Desarrolladora Backend</h4>
+                    <h4>Desarrolladora Full stack</h4>
                     <ul>
                         <li>Universidad Nacional de General Sarmiento</li>
                         <li>Práctica Profesional Universitaria: Marzo 2023 - Julio 2023</li>
                         <li>Django</li>
                         <li>SQLite</li>
+                        <li>React</li>
                     </ul>
                 </li>
             </ul>

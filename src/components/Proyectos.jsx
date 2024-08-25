@@ -36,6 +36,7 @@ export const Proyectos = () => {
                     descripcion={ proyecto.descripcion}
                     repositorio={ proyecto.repositorio}
                     imagen={ proyecto.imagen} 
+                    sitio={ proyecto.sitio }
                   />
                 </Grid>
               )

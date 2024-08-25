@@ -33,12 +33,12 @@ export const Tecnologias = () => {
         <div className="accordion-item">
             <h2 className="accordion-header">
             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                Formación Académica
+                Experiencia
             </button>
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse show" >
                 <div className="accordion-body">
-                    <Educacion />
+                    <Experiencia />
                 </div>
             </div>
         </div>
@@ -46,12 +46,12 @@ export const Tecnologias = () => {
         <div className="accordion-item">
             <h2 className="accordion-header">
             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                Experiencia
+                Formación Académica
             </button>
             </h2>
             <div id="collapseFour" className="accordion-collapse collapse show" >
                 <div className="accordion-body">
-                    <Experiencia />
+                    <Educacion />
                 </div>
             </div>
         </div>

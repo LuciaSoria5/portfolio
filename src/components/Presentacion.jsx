@@ -10,10 +10,16 @@ export const Presentacion = () => {
             <h3 className="titulo">¡Hola! Mi nombre es</h3>
             <h1 className="titulo">Lucía Soria</h1>
             <hr/>
-            <ul className="items-descripcion">
+            <h2>
+            <ul className="items-descripcion list-unstyled">
                 <li>Desarrolladora full stack</li>
                 <li>Docente de Programación</li>
             </ul>
+            </h2>
+            {/* <ul className="items-descripcion">
+                <li>Desarrolladora full stack</li>
+                <li>Docente de Programación</li>
+            </ul> */}
         </div>
         <div className="col-md-6">
             <img src="/naruto.png" alt="Imagen"/>
