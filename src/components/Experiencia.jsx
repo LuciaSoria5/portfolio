@@ -2,11 +2,11 @@ import React from 'react'
 
 export const Experiencia = () => {
   return (
-    <div className="row mt-5 justify-content-center align-items-center p-3 border bg-light">
+    <div className="row justify-content-center align-items-center p-3 border bg-light">
         <div className="col-md-4">
             <h1>Experiencia</h1>
         </div>
-        <div className="col-md-8 mt-5 text-start">
+        <div className="col-md-8 mt-2 text-start">
             <ul>
                 <li>
                     <h4>Docente de Programación</h4>

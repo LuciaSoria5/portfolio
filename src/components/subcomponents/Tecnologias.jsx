@@ -2,12 +2,12 @@ import React from 'react'
 
 export const Tecnologias = () => {
   return (
-    <>
+    <div className="row justify-content-center align-items-center p-3 border bg-light">
         <div className="col-md-4">
             <h1>Tecnologías</h1>
         </div>
         <div className="col-md-8 mt-2 text-start" style={{columns: 3}}>
-        <ul className="row list-unstyled">
+          <ul className="row list-unstyled">
                 <li>React</li>
                 <li>.Net</li>
                 <li>Django</li>
@@ -23,8 +23,9 @@ export const Tecnologias = () => {
                 <li>UML</li>
                 <li>Especificación de requerimientos</li>
                 <li>Metodologías ágiles</li>
+                <li>Patrones de diseño</li>
             </ul>
         </div>
-    </>
+    </div>
   )
 }
