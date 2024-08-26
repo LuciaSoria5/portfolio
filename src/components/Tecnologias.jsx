@@ -56,7 +56,7 @@ export const Tecnologias = () => {
                     Formación Académica
                 </button>
                 </h2>
-                <div id="collapseFour" className="accordion-collapse collapse" >
+                <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordion">
                     <div className="accordion-body">
                         <Educacion />
                     </div>

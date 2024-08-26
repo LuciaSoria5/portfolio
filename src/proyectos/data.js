@@ -8,23 +8,23 @@ export const proyectos = [
     },
     {
         titulo: 'Journal',
-        descripcion: 'Aplicación con autenticación que permite crear, eidtar, y eliminar entradas en una agenda.',
+        descripcion: 'Aplicación con autenticación que permite crear, editar, y eliminar entradas en una agenda.',
         repositorio: 'https://github.com/LuciaSoria5/JournalApp.git',
         imagen: 'agenda.jpeg',
         sitio: 'https://luciasoria5.github.io/JournalApp/'
     },
-    // {
-    //     titulo: '',
-    //     descripcion: '',
-    //     repositorio: '',
-    //     imagen: ''
-    // },
-    // {
-    //     titulo: '',
-    //     descripcion: '',
-    //     repositorio: '',
-    //     imagen: ''
-    // },
+    {
+        titulo: '1',
+        descripcion: '',
+        repositorio: '',
+        imagen: ''
+    },
+    {
+        titulo: '2',
+        descripcion: '',
+        repositorio: '',
+        imagen: ''
+    },
     // {
     //     titulo: '',
     //     descripcion: '',

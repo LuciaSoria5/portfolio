@@ -58,7 +58,7 @@ export const Presentacion = () => {
           src="/naruto.png"
           alt="Imagen"
           sx={{
-            width: '40%',
+            width: '30%',
             height: 'auto',
             maxWidth: '100%',
           }}
