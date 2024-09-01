@@ -4,7 +4,6 @@ import { Grid } from '@mui/material'
 
 export const MiPortfolio = () => {
 
-  
   const proyectoRef = useRef();
   const [proyectosPosicion, setProyectosPosicion] = useState();
 
@@ -15,7 +14,7 @@ export const MiPortfolio = () => {
         top: rect.top,
         left: rect.left,
       });
-      console.log(proyectosPosicion)
+      // console.log(proyectosPosicion)
     }
   }, []);
 

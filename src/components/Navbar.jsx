@@ -8,7 +8,7 @@ import { useScroll } from '../hooks/useScroll';
 
 export const Navbar = ({ posiciones= {} }) => {
 
-  console.log(posiciones)
+  // console.log(posiciones)
   const { scrollToTop, scrollToBottom, scrollTo } = useScroll();
   return (
     <AppBar 

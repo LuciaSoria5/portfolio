@@ -15,13 +15,13 @@ export const Proyectos = forwardRef((props, ref) => {
           container
           direction="row" 
           mt={3}
-          ml={5}
+          // ml={10}
           justifyContent="center"
-          alignItems="center"
-          display='flex'
+          // alignItems="center"
+          // display='flex'
           wrap="nowrap"
           sx={{ flexGrow: 1 }}
-          spacing={5}
+          spacing={2}
         >
           <Typography variant="h3" component="div">
             Mis proyectos
@@ -31,10 +31,9 @@ export const Proyectos = forwardRef((props, ref) => {
           container
           direction="row" 
           rowSpacing={1} 
-          columnSpacing={5}
           mt={1}
+          mb={0}
           ml={5}
-          mr={5}
           justifyContent="center"
           alignItems="top"
           display='flex'
@@ -46,7 +45,7 @@ export const Proyectos = forwardRef((props, ref) => {
             listaProyectos.map( proyecto => 
               <Grid 
                 item
-                xs={12} sm={12} md={6} lg={6}
+                xs={12} sm={12} md={4} lg={4}
                 // xs={12} 
                 mt={2}
                 justifyContent="center"
