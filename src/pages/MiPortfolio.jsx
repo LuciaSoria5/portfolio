@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useRef, useState } from 'react'
 import { Contacto, Experiencia, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
 import { Grid } from '@mui/material'
+import { Navbar2 } from '../components/Navbar2';
 
 export const MiPortfolio = () => {
 
@@ -11,10 +12,9 @@ export const MiPortfolio = () => {
     if (proyectoRef.current) {
       const rect = proyectoRef.current.getBoundingClientRect();
       setProyectosPosicion({
-        top: rect.top,
+        top: rect.top - 50,
         left: rect.left,
       });
-      // console.log(proyectosPosicion)
     }
   }, []);
 
@@ -32,17 +32,13 @@ export const MiPortfolio = () => {
       mt: 7
     }}
   >
-    {/* <Grid 
-      className="container text-center" 
-      style={{"height": "100vh"}} 
-
-    > */}
-        <Navbar id="navbar" posiciones={{ proyectos: proyectosPosicion }}/>
-        <Presentacion id="presentacion" />
-        <SobreMi id="sobreMi" />
-        <Tecnologias id="tecnologias" />
-        <Proyectos id="proyectos" ref={ proyectoRef }/>
-        <Contacto />
+      {/* <Navbar id="navbar" posiciones={{ proyectos: proyectosPosicion }}/> */}
+      <Navbar2 posiciones={{ proyectos: proyectosPosicion }} />
+      <Presentacion id="presentacion" />
+      <SobreMi id="sobreMi" />
+      <Tecnologias id="tecnologias" />
+      <Proyectos id="proyectos" ref={ proyectoRef }/>
+      <Contacto />
     </Grid>
   )
 }

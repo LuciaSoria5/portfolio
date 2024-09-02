@@ -1,23 +1,32 @@
 import { AppBar, Button, Grid, IconButton, Toolbar, Typography } from '@mui/material'
 import Face3Icon from '@mui/icons-material/Face3';
-// import SchoolIcon from '@mui/icons-material/School';
 import ComputerIcon from '@mui/icons-material/Computer';
-// import WorkIcon from '@mui/icons-material/Work';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useScroll } from '../hooks/useScroll';
 
 export const Navbar = ({ posiciones= {} }) => {
 
-  // console.log(posiciones)
   const { scrollToTop, scrollToBottom, scrollTo } = useScroll();
   return (
     <AppBar 
         position="fixed"
         sx={{
           width: {sm: "100%"},
+          flexGrow: 1
         }}
     >
         <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+
             <Grid 
               container 
               direction="row" 
