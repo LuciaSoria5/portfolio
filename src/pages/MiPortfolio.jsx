@@ -21,6 +21,7 @@ export const MiPortfolio = () => {
 
   return (
     <Grid 
+    className='background'
     container 
     direction="row" 
     justifyContent="center"
@@ -28,6 +29,7 @@ export const MiPortfolio = () => {
     width="100%"
     sx={{ 
       // backgroundColor: 'primary.main', 
+      backgroundColor: 'primary.main',
       color: 'primary.color',
       mt: 7
     }}
@@ -39,6 +41,6 @@ export const MiPortfolio = () => {
       <Tecnologias id="tecnologias" />
       <Proyectos id="proyectos" ref={ proyectoRef }/>
       <Contacto />
-    </Grid>
+  </Grid>
   )
 }

@@ -14,7 +14,7 @@ export const Presentacion = () => {
         spacing={2}
         // ml={5}
         wrap="nowrap"
-        sx={{ flexGrow: 1 }}
+        sx={{ flexGrow: 1, backgroundColor: 'primary.main', color: 'primary.color',}}
       >
         <Grid 
           item 

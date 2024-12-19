@@ -1,3 +1,4 @@
+import '@mui/material/styles/styled';
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { MisRutas } from './router'

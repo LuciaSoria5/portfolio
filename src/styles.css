@@ -4,10 +4,15 @@ body {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: '#1d0c20';
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: black; */
 }
 
+.background {
+  background-color: #2e1e45; /* Color de fondo */
+  height: 100vh; /* Altura del 100% de la pantalla */
+  width: 100%; /* Ancho completo */
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
