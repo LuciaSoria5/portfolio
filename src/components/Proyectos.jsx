@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { proyectos } from '../proyectos/data';
+import { proyectos } from '../info/proyectos';
 import { Proyecto } from './subcomponents/Proyecto';
 import { Grid, Typography } from '@mui/material';
 

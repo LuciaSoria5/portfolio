@@ -1,5 +1,5 @@
 import { Alert, Button, Grid, Link, TextField, Typography } from '@mui/material';
-import { Educacion, Habilidades, Tecnologias as Tecnologias2 } from './subcomponents'
+import { Educacion, Habilidades, ConocTecnicos } from './subcomponents'
 import { Experiencia } from './Experiencia';
 
 export const Tecnologias = () => {
@@ -18,25 +18,23 @@ export const Tecnologias = () => {
         color: 'primary.color',
         padding: 3,
       }}
-    //   spacing={2}
     >
-        {/* <div className="accordion col-10 mt-5" id="accordion"> */}
             <div className="accordion-item">
                 <h2 className="accordion-header">
                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Tecnologías
+                    <h3>Conocimientos tecnicos</h3>
                 </button>
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordion" >
                     <div className="accordion-body">
-                        <Tecnologias2 />
+                        <ConocTecnicos />
                     </div>
                 </div>
             </div>
             <div className="accordion-item">
                 <h2 className="accordion-header">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Habilidades personales
+                    <h3>Habilidades personales</h3>
                 </button>
                 </h2>
                 <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordion">
@@ -48,7 +46,7 @@ export const Tecnologias = () => {
             <div className="accordion-item">
                 <h2 className="accordion-header">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Experiencia
+                    <h3>Experiencia</h3>
                 </button>
                 </h2>
                 <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordion">
@@ -61,7 +59,7 @@ export const Tecnologias = () => {
             <div className="accordion-item">
                 <h2 className="accordion-header">
                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Formación Académica
+                    <h3>Formación Académica</h3>
                 </button>
                 </h2>
                 <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordion">
@@ -70,7 +68,6 @@ export const Tecnologias = () => {
                     </div>
                 </div>
             </div>
-        {/* </div> */}
     </Grid>
   )
 }
