@@ -1,4 +1,4 @@
-export * from './Experiencia';
+export * from './XExperiencia';
 export * from './Contacto';
 export * from './Navbar';
 export * from './Presentacion';

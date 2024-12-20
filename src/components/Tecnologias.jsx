@@ -1,6 +1,10 @@
 import { Alert, Button, Grid, Link, TextField, Typography } from '@mui/material';
 import { Educacion, Habilidades, ConocTecnicos } from './subcomponents'
-import { Experiencia } from './Experiencia';
+import { EnumItems } from './subcomponents/EnumItems';
+// import { Experiencia } from './XExperiencia';
+import { personales, tecnicos } from '../info/conocimientos';
+import { experiencia } from '../info/experiencia';
+import { educacion } from '../info/educacion';
 
 export const Tecnologias = () => {
     //justify-content-center align-items-center
@@ -27,7 +31,7 @@ export const Tecnologias = () => {
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordion" >
                     <div className="accordion-body">
-                        <ConocTecnicos />
+                          <EnumItems json={ tecnicos }/>                                                   
                     </div>
                 </div>
             </div>
@@ -40,6 +44,7 @@ export const Tecnologias = () => {
                 <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordion">
                     <div className="accordion-body">
                         <Habilidades />
+                        {/* <EnumItems json={ personales } /> */}
                     </div>
                 </div>
             </div>
@@ -51,7 +56,7 @@ export const Tecnologias = () => {
                 </h2>
                 <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordion">
                     <div className="accordion-body">
-                        <Experiencia />
+                        <EnumItems json={ experiencia } />
                     </div>
                 </div>
             </div>
@@ -64,7 +69,7 @@ export const Tecnologias = () => {
                 </h2>
                 <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordion">
                     <div className="accordion-body">
-                        <Educacion />
+                    <EnumItems json={ educacion } />
                     </div>
                 </div>
             </div>

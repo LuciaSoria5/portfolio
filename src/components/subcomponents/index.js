@@ -1,3 +1,3 @@
-export * from './Educacion';
+export * from './XEducacion';
 export * from './Habilidades';
-export * from './ConocTecnicos';
+export * from './XConocTecnicos';

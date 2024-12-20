@@ -22,7 +22,7 @@ export const tecnicos = [
         'Bases de Datos': [
             { 
                 SQL: ['PostgreSQL', 'MySQL'],
-                NSQL: ['MongoDB', 'CassandraDB', 'ArangoDB']
+                NoSQL: ['MongoDB', 'CassandraDB', 'ArangoDB']
             }
         ]
     },
@@ -47,11 +47,11 @@ export const tecnicos = [
 ];
 
 export const personales = [
-    'Comunicación efectiva',
-    'Trabajo en equipo',
-    'Liderazgo',
-    'Aprendizaje rápido',
-    'Autodidacta y organizada',
-    'Adaptabilidad',
-    'Creatividad y resolución de problemas'
+        'Comunicación efectiva',
+        'Trabajo en equipo',
+        'Liderazgo',
+        'Aprendizaje rápido',
+        'Autodidacta y organizada',
+        'Adaptabilidad',
+        'Creatividad y resolución de problemas'
 ]
