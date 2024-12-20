@@ -5,14 +5,22 @@ import { Experiencia } from './Experiencia';
 export const Tecnologias = () => {
     //justify-content-center align-items-center
   return (
-    // <Grid 
-    // container
-    // direction="row" 
-    // justifyContent="center"
-    // alignItems="center"
-    // style={{ width: '75%'}}
-//   >
-        <div className="accordion col-10 mt-5" id="accordion">
+    <Grid 
+      className="accordion  col-10" 
+      id="accordion"
+      container
+      direction="column" 
+    //   mt={3}
+      justifyContent="center"
+      sx={{ 
+        flexGrow: 1, 
+        backgroundColor: 'primary.main', 
+        color: 'primary.color',
+        padding: 3,
+      }}
+    //   spacing={2}
+    >
+        {/* <div className="accordion col-10 mt-5" id="accordion"> */}
             <div className="accordion-item">
                 <h2 className="accordion-header">
                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -62,7 +70,7 @@ export const Tecnologias = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    // </Grid>
+        {/* </div> */}
+    </Grid>
   )
 }

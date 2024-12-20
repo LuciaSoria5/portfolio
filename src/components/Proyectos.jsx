@@ -12,7 +12,7 @@ export const Proyectos = forwardRef((props, ref) => {
       ref={ref}
       container
       direction="column" 
-      mt={3}
+      // mt={3}
       justifyContent="center"
       sx={{ 
         flexGrow: 1, 
