@@ -1,13 +1,14 @@
 import React from 'react'
 import { Grid } from '@mui/material';
+import CheckIcon from '@mui/icons-material/Check';
 
 export const EnumItems = ({ json }) => {
 
   return (
     <Grid
       container
-      justifyContent="left"
-      spacing={3}
+      justifyContent="center"
+      spacing={6}
       sx={{
         padding: '24px',
       }}
@@ -20,7 +21,7 @@ export const EnumItems = ({ json }) => {
             xs={12} sm={6} md={4} lg={3}
             key={indice}
           >
-            <h4>{clave}</h4>
+            <h4><CheckIcon fontSize='large'/>{clave}</h4>
             {valor.map((item, i) => (
               <Grid key={i}>
                 {Object.entries(item).map(([subKey, subValue], j) => (

@@ -1,3 +1,4 @@
-export * from './XEducacion';
+export * from './ElevationScroll';
+export * from './EnumItems';
 export * from './Habilidades';
-export * from './XConocTecnicos';
+export * from './Proyecto';

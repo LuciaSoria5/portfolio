@@ -1,10 +1,6 @@
-import { Alert, Button, Grid, Link, TextField, Typography } from '@mui/material';
-import { Educacion, Habilidades, ConocTecnicos } from './subcomponents'
-import { EnumItems } from './subcomponents/EnumItems';
-// import { Experiencia } from './XExperiencia';
-import { personales, tecnicos } from '../info/conocimientos';
-import { experiencia } from '../info/experiencia';
-import { educacion } from '../info/educacion';
+import { Grid } from '@mui/material';
+import { Habilidades, EnumItems } from './subcomponents'
+import { personales, tecnicos, experiencia, educacion } from '../info';
 
 export const Tecnologias = () => {
     //justify-content-center align-items-center

@@ -1,7 +1,7 @@
-import React, { forwardRef, useEffect, useRef, useState } from 'react'
-import { Contacto, Experiencia, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
+import React, { useEffect, useRef, useState } from 'react'
+import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
 import { Grid } from '@mui/material'
-import { Navbar2 } from '../components/Navbar2';
+import { Navbar2 } from '../components';
 
 export const MiPortfolio = () => {
 
