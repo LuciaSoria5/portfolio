@@ -81,7 +81,7 @@ export const Proyecto2 = ({ titulo, descripcion, repositorio, imagen, git, sitio
 
         <CardContent
           sx={{
-            // alignSelf: 'stretch', // Ocupa todo el ancho
+            alignSelf: 'stretch', // Ocupa todo el ancho
           }}
         >
           <Typography component="div" variant="h5">
