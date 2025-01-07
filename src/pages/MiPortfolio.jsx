@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Contacto, Navbar, Presentacion, Proyectos, Proyectos2, SobreMi, Tecnologias } from '../components'
+import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
 import { Grid } from '@mui/material'
-import { Navbar2 } from '../components';
 
 export const MiPortfolio = () => {
 
@@ -35,12 +34,12 @@ export const MiPortfolio = () => {
     }}
   >
       {/* <Navbar id="navbar" posiciones={{ proyectos: proyectosPosicion }}/> */}
-      <Navbar2 posiciones={{ proyectos: proyectosPosicion }} />
+      <Navbar posiciones={{ proyectos: proyectosPosicion }} />
       <Presentacion id="presentacion" />
       <SobreMi id="sobreMi" />
       <Tecnologias id="tecnologias" />
+      {/* <XProyectos id="proyectos" ref={ proyectoRef }/> */}
       <Proyectos id="proyectos" ref={ proyectoRef }/>
-      <Proyectos2 />
       <Contacto />
   </Grid>
   )
