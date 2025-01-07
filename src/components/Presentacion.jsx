@@ -3,7 +3,6 @@ import StarIcon from '@mui/icons-material/Star';
 
 export const Presentacion = () => {
   return (
-    // <div className="row mt-5">
       <Grid 
         container
         mt={7}
@@ -12,9 +11,7 @@ export const Presentacion = () => {
         alignItems="center"
         display='flex'
         spacing={2}
-        // ml={5}
         wrap="nowrap"
-        sx={{ flexGrow: 1, backgroundColor: 'primary.main', color: 'primary.color',}}
       >
         <Grid 
           item 
@@ -24,10 +21,10 @@ export const Presentacion = () => {
           <Typography variant="h3" component="div">
             ¡Hola! Mi nombre es
           </Typography>
-          <Typography variant="h1" component="div">
+          <Typography variant="h1" component="div" padding='24px'>
             Lucía Soria
           </Typography>
-          <hr/>
+          {/* <hr/> */}
           <Box
           sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <List>

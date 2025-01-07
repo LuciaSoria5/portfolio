@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
-import { Grid } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 
 export const MiPortfolio = () => {
 
@@ -19,28 +19,25 @@ export const MiPortfolio = () => {
 
 
   return (
-    <Grid 
-    className='background'
-    container 
-    direction="row" 
-    justifyContent="center"
-    alignItems="center"
-    width="100%"
-    sx={{ 
-      // backgroundColor: 'primary.main', 
-      backgroundColor: 'primary.main',
-      color: 'primary.color',
-      mt: 7
-    }}
-  >
-      {/* <Navbar id="navbar" posiciones={{ proyectos: proyectosPosicion }}/> */}
+    <Box
+      className='background'
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      sx={{
+        width: '100%',
+        minHeight: '100vh',
+        backgroundColor: 'primary.main',
+        color: 'primary.color',
+      }}
+    >
       <Navbar posiciones={{ proyectos: proyectosPosicion }} />
       <Presentacion id="presentacion" />
       <SobreMi id="sobreMi" />
       <Tecnologias id="tecnologias" />
-      {/* <XProyectos id="proyectos" ref={ proyectoRef }/> */}
-      <Proyectos id="proyectos" ref={ proyectoRef }/>
+      <Proyectos id="proyectos" ref={proyectoRef} />
       <Contacto />
-  </Grid>
+    </Box>
   )
 }

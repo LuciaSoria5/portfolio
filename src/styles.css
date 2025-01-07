@@ -8,12 +8,6 @@ body {
   /* background-color: black; */
 }
 
-.background {
-  background-color: #2e1e45; /* Color de fondo */
-  height: 100vh; /* Altura del 100% de la pantalla */
-  width: 100%; /* Ancho completo */
-}
-
 .mySwiper .swiper-pagination {
   position: absolute; /* Mantener absoluto */
   bottom: -20px;      /* Mover los puntos hacia abajo */
