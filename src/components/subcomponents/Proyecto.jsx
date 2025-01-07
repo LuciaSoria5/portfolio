@@ -1,4 +1,4 @@
-import { AppBar, Box, Card, CardActionArea, CardContent, CardMedia, Grid, Link, Toolbar, Typography, IconButton } from "@mui/material"
+import { Card, CardContent, CardMedia, Typography, IconButton } from "@mui/material"
 import { ElevationScroll } from "./ElevationScroll";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,9 +25,9 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen, git, sitio=
           component="img"
           image={ ImgUrl }
           alt={ titulo }
-          sx={{ height: '200px', 
+          sx={{ 
+            width: '300px', 
             objectFit: 'cover' /* Imagen consistente */
-
           }} 
         />
         <CardContent >

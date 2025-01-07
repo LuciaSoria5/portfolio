@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
-import { proyectos } from '../info/proyectos';
-import { Proyecto } from './subcomponents/Proyecto';
+import { proyectos } from '../info';
+import { Proyecto } from './subcomponents';
 import { Grid, Typography } from '@mui/material';
 
 export const Proyectos = forwardRef((props, ref) => {
