@@ -46,7 +46,7 @@ export const SobreMi = () => {
               Sobre mí
             </Typography>
             {desc.map(parrafo => (
-              <Typography variant='body1' fontSize={20} key={ getCont() }>
+              <Typography variant='body1' fontSize={20} key={getCont()}>
                 {parrafo}
               </Typography>
             ))}
@@ -64,12 +64,13 @@ export const SobreMi = () => {
         >
           <Box
             component='img'
-            src='/naruto.png'
+            src='/computadora.png'
             alt='Imagen'
             sx={{
               width: '100%', // Imagen ocupa todo el ancho disponible
               maxWidth: '400px', // Ancho máximo
               height: 'auto', // Mantiene proporciones
+              borderRadius: '70%'
             }}
           />
         </Grid>

@@ -15,7 +15,7 @@ import Face3Icon from '@mui/icons-material/Face3';
 import ComputerIcon from '@mui/icons-material/Computer';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 
-export const Navbar = ({ posiciones= {} }) => {
+export const Navbar = ({ posiciones = {} }) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const { scrollToTop, scrollToBottom, scrollTo } = useScroll();
 
@@ -27,35 +27,35 @@ export const Navbar = ({ posiciones= {} }) => {
     setAnchorElNav(null);
   };
 
-const irArriba = () => {
+  const irArriba = () => {
     handleCloseNavMenu();
     scrollToTop({
-        duration: 20,
-        smooth: true,
-        delay: 0,
-        isDynamic: true,
-      })
-}
+      duration: 20,
+      smooth: true,
+      delay: 0,
+      isDynamic: true,
+    })
+  }
 
-const irAbajo = () => {
+  const irAbajo = () => {
     handleCloseNavMenu();
     scrollToBottom({
-        duration: 20,
-        smooth: true,
-        delay: 0,
-        isDynamic: true,
-      })
-}
+      duration: 20,
+      smooth: true,
+      delay: 0,
+      isDynamic: true,
+    })
+  }
 
-const irProyectos = () => {
+  const irProyectos = () => {
     handleCloseNavMenu();
-    scrollTo( posiciones.proyectos.top, {
-        duration: 20,
-        smooth: true,
-        delay: 0,
-        isDynamic: true,
-      });
-}
+    scrollTo(posiciones.proyectos.top, {
+      duration: 20,
+      smooth: true,
+      delay: 0,
+      isDynamic: true,
+    });
+  }
 
   return (
     <AppBar position="fixed"  >
@@ -72,7 +72,7 @@ const irProyectos = () => {
               display: { xs: 'none', md: 'flex' },
               fontWeight: 900,
               textDecoration: 'none',
-              
+
             }}
           >
             Lucía Soria
@@ -105,21 +105,21 @@ const irProyectos = () => {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
-                <MenuItem key="sobreMi" onClick={irArriba}>
-                    <Face3Icon />
-                    <Typography sx={{ textAlign: 'center' }}>Sobre mi</Typography>
-                </MenuItem>
-                <MenuItem key="proyectos" onClick={irProyectos}>
-                    <ComputerIcon />
-                    <Typography sx={{ textAlign: 'center' }}>Proyectos</Typography>
-                </MenuItem>
-                <MenuItem key="contacto" onClick={irAbajo} start>
-                    <ContactPageIcon />
-                    <Typography sx={{ textAlign: 'center' }}>Contacto</Typography>
-                </MenuItem>
+              <MenuItem key="sobreMi" onClick={irArriba}>
+                <Face3Icon />
+                <Typography sx={{ textAlign: 'center' }}>Sobre mi</Typography>
+              </MenuItem>
+              <MenuItem key="proyectos" onClick={irProyectos}>
+                <ComputerIcon />
+                <Typography sx={{ textAlign: 'center' }}>Proyectos</Typography>
+              </MenuItem>
+              <MenuItem key="contacto" onClick={irAbajo} start>
+                <ContactPageIcon />
+                <Typography sx={{ textAlign: 'center' }}>Contacto</Typography>
+              </MenuItem>
             </Menu>
           </Box>
-{/*  --------------------------------- GRANDE ----------------------------------------------------  */}
+          {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
           <Typography
             variant="h4"
             noWrap
@@ -131,35 +131,35 @@ const irProyectos = () => {
               flexGrow: 1,
               fontWeight: 700,
               textDecoration: 'none',
-              
+
             }}
           >
             Lucía Soria
           </Typography>
-          <Box justifyContent="end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+          <Box justifyContent="end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <Button
-                key="sobreMi" 
-                onClick={irArriba}
-                startIcon={<Face3Icon />}
-                sx={{ my: 2, color: 'white', display: 'block', mr: 2}}
+              key="sobreMi"
+              onClick={irArriba}
+              startIcon={<Face3Icon />}
+              sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
             >
-                Sobre mi
+              Sobre mi
             </Button>
             <Button
-                key="proyectos" 
-                onClick={irProyectos}
-                startIcon={<ComputerIcon />}
-                sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
+              key="proyectos"
+              onClick={irProyectos}
+              startIcon={<ComputerIcon />}
+              sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
             >
-                Proyectos
+              Proyectos
             </Button>
             <Button
-                key="contacto" 
-                onClick={irAbajo}
-                startIcon={<ContactPageIcon />}
-                sx={{ my: 2, color: 'white', display: 'block'}}
+              key="contacto"
+              onClick={irAbajo}
+              startIcon={<ContactPageIcon />}
+              sx={{ my: 2, color: 'white', display: 'block' }}
             >
-                Contacto
+              Contacto
             </Button>
           </Box>
         </Toolbar>

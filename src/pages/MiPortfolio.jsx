@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
-import { Box, Grid } from '@mui/material'
+import { Box } from '@mui/material'
 
 export const MiPortfolio = () => {
 

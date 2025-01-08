@@ -1,66 +1,98 @@
-import { Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useMediaQuery, useTheme } from '@mui/material'
 import StarIcon from '@mui/icons-material/Star';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export const Presentacion = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detecta pantallas pequeñas
+
   return (
-      <Grid 
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '30px',
+        maxWidth: '1200px', // Ancho máximo para pantallas grandes
+        margin: '0 auto', // Centra horizontalmente el contenedor principal
+      }}
+    >
+      <Grid
         container
         mt={7}
-        direction="row" 
+        direction={isSmallScreen ? 'column' : 'row'}
         justifyContent="center"
         alignItems="center"
-        display='flex'
-        spacing={2}
-        wrap="nowrap"
+      // spacing={1} // Espaciado entre elementos
       >
-        <Grid 
-          item 
-          md={7} 
-          sx={{ textAlign: 'center' }} 
+        {/* Texto */}
+        <Grid
+          item
+          xs={12}
+          md={7}
+          justifyContent='center'
+          alignItems='center'
+          textAlign='center'
         >
-          <Typography variant="h3" component="div">
-            ¡Hola! Mi nombre es
-          </Typography>
-          <Typography variant="h1" component="div" padding='24px'>
-            Lucía Soria
-          </Typography>
-          {/* <hr/> */}
+          <Box sx={{ padding: '16px' }}>
+            <Typography variant="h3" component="div">
+              ¡Hola! Mi nombre es
+            </Typography>
+            <Typography variant="h1" component="div" padding='24px'>
+              Lucía
+            </Typography>
+          </Box>
+
           <Box
-          sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <List>
               <ListItem >
-                  <ListItemIcon>
-                    <StarIcon fontSize="large" sx={{ color:"primary.color"}} />
-                  </ListItemIcon>
-                  <ListItemText 
-                    primary="Desarrolladora Full stack"
-                    primaryTypographyProps={{ variant: 'h4'}}
-                  />
+                <ListItemIcon>
+                  <FavoriteIcon fontSize="large" sx={{ color: "primary.color" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Desarrolladora Full stack"
+                  primaryTypographyProps={{ variant: 'h4' }}
+                />
               </ListItem>
               <ListItem>
-                  <ListItemIcon>
-                    <StarIcon  fontSize="large" sx={{ color:"primary.color"}} />
-                  </ListItemIcon>
-                  <ListItemText 
-                    primary="Docente de Programación"
-                    primaryTypographyProps={{ variant: 'h4' }}
-                  />
+                <ListItemIcon>
+                  <FavoriteIcon fontSize="large" sx={{ color: "primary.color" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Docente de Programación"
+                  primaryTypographyProps={{ variant: 'h4' }}
+                />
               </ListItem>
             </List>
           </Box>
         </Grid>
 
-        <Box
-          component="img"
-          src="/naruto.png"
-          alt="Imagen"
-          sx={{
-            width: '30%',
-            height: 'auto',
-            maxWidth: '100%',
-          }}
-        />
+        {/* Imagen */}
+        <Grid
+          item
+          xs={12}
+          md={5}
+          justifyContent='center'
+          alignItems='center'
+        >
+          <Box
+            component='img'
+            src='/chica.png'
+            alt='Imagen'
+            sx={{
+              width: '100%', // Imagen ocupa todo el ancho disponible
+              maxWidth: '100%', // Ancho máximo
+              height: 'auto', // Mantiene proporciones
+              borderRadius: '50%',
+              // width: '30%',
+              // height: 'auto',
+              // maxWidth: '100%',
+            }}
+          />
+        </Grid>
       </Grid>
-    // </div>
+
+    </Box>
   )
 }

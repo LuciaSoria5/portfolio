@@ -14,18 +14,16 @@ export const Tecnologias = () => {
       justifyContent="center"
       sx={{ 
         flexGrow: 1, 
-        backgroundColor: 'primary.main', 
-        color: 'primary.color',
         padding: 3,
       }}
     >
             <div className="accordion-item">
                 <h2 className="accordion-header">
-                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <h3>Conocimientos tecnicos</h3>
                 </button>
                 </h2>
-                <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordion" >
+                <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordion" >
                     <div className="accordion-body">
                           <EnumItems json={ tecnicos }/>                                                   
                     </div>
