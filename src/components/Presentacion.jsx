@@ -51,7 +51,7 @@ export const Presentacion = () => {
                   <FavoriteIcon fontSize="large" sx={{ color: "primary.color" }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Desarrolladora Full stack"
+                  primary="Desarrolladora Fullstack"
                   primaryTypographyProps={{ variant: 'h4' }}
                 />
               </ListItem>
@@ -60,7 +60,7 @@ export const Presentacion = () => {
                   <FavoriteIcon fontSize="large" sx={{ color: "primary.color" }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Docente de Programación"
+                  primary="Docente de Sistemas"
                   primaryTypographyProps={{ variant: 'h4' }}
                 />
               </ListItem>
@@ -91,8 +91,17 @@ export const Presentacion = () => {
             }}
           />
         </Grid>
+      <Box
+        component='img'
+        src='/guarda.png'
+        alt='Imagen'
+        sx={{
+          width: '70%', // Imagen ocupa todo el ancho disponible
+          maxWidth: '100%', // Ancho máximo
+          height: 'auto', // Mantiene proporciones
+        }}
+      />
       </Grid>
-
     </Box>
   )
 }

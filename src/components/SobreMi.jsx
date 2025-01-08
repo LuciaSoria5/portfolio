@@ -20,7 +20,7 @@ export const SobreMi = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '30px',
+        padding: '20px',
         maxWidth: '1200px', // Ancho máximo para pantallas grandes
         margin: '0 auto', // Centra horizontalmente el contenedor principal
       }}
@@ -74,6 +74,17 @@ export const SobreMi = () => {
             }}
           />
         </Grid>
+
+        <Box
+        component='img'
+        src='/guarda.png'
+        alt='Imagen'
+        sx={{
+          width: '70%', // Imagen ocupa todo el ancho disponible
+          maxWidth: '100%', // Ancho máximo
+          height: 'auto', // Mantiene proporciones
+        }}
+      />
       </Grid>
     </Box>
   );

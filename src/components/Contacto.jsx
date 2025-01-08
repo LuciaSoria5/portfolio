@@ -15,8 +15,6 @@ export const Contacto = () => {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            // mt={10}
-            // mb={5}
             sx={{
                 height: "10%"
             }}
@@ -24,13 +22,17 @@ export const Contacto = () => {
             <Grid
                 item
                 xs={12}
-                sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'primary.color' }}
+                sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center', 
+                }}
             >
                 <Typography
                     variant="h4"
                     component="div"
                 >
-                    ¡Contáctame!
+                    Contáctame:
                 </Typography>
                 <IconButton
                     role="button"
@@ -59,17 +61,24 @@ export const Contacto = () => {
             <Grid
                 item
                 xs={12}
-                // mt={2}
-                sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center',
+                    mb: 2
+                }}
             >
-                <br />
                 <Typography
                     variant="h6"
                     component="div"
+                    sx={{
+                        display: 'flex', // Para alinear los elementos horizontalmente
+                        alignItems: 'center', // Centra verticalmente los corazones y el texto
+                    }}
                 >
-                    <FavoriteIcon />
-                    Gracias por tu visita
-                    <FavoriteIcon />
+                    <FavoriteIcon sx={{ mr: 1 }} />
+                    Gracias por tu visita   
+                    <FavoriteIcon sx={{ ml: 1 }} />
                 </Typography>
             </Grid>
         </Grid>

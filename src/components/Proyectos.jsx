@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 
-import { Grid } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -23,6 +23,11 @@ export const Proyectos = forwardRef((props, ref) => {
                 padding: '14px', // Espacio alrededor de todo el contenido
             }}
         >
+            <Box >
+                <Typography variant='h2' component='div' gutterBottom>
+                    Mis proyectos
+                </Typography>
+            </Box>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -52,6 +57,16 @@ export const Proyectos = forwardRef((props, ref) => {
                     ))
                 }
             </Swiper>
+            <Box
+                component='img'
+                src='/guarda.png'
+                alt='Imagen'
+                sx={{
+                    width: '48%', // Imagen ocupa todo el ancho disponible
+                    maxWidth: '100%', // Ancho máximo
+                    height: 'auto', // Mantiene proporciones
+                }}
+            />
         </Grid>
     );
 })
