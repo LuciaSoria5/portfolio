@@ -1,37 +1,53 @@
 export const proyectos = [
     {
         titulo: 'Calendario',
-        descripcion: 'Aplicación MERN con autenticación que permite crear, editar, y eliminar eventos.',
+        herramientas: ['JavaScript', 'React', 'React Router', 'MongoDB', 'Json Web Token', 'Node.js', 'Express', 'Redux Toolkit', 'Material UI'],
+        descripcion: 'Aplicación MERN con autenticación que permite crear, editar, y eliminar eventos en un calendario compartido.',
         repositorio: 'https://github.com/LuciaSoria5/CalendarApp.git',
-        imagen: 'calendario.jpeg',
+        imagen: 'calendar.png',
         sitio: 'https://calendarapp-backend-luci.up.railway.app/auth/login',
         git: 'GitHub'
     },
     {
         titulo: 'AgendApp',
+        herramientas: ['JavaScript', 'React', 'React Router', 'Firebase', 'Redux Toolkit', 'Cloudinary', 'Material UI'],
         descripcion: 'Aplicación con autenticación que permite crear, editar, y eliminar entradas en una agenda.',
         repositorio: 'https://github.com/LuciaSoria5/JournalApp.git',
-        imagen: 'agenda.jpeg',
+        imagen: 'journal.png',
         sitio: 'https://luciasoria5.github.io/JournalApp/',
         git: 'GitHub'
     },
     {
+        titulo: 'Char Device',
+        herramientas: 'C',
+        descripcion: 'Desarrollo de driver para la materia Sistemas Operativos y Redes II',
+        repositorio: 'https://gitlab.com/LuciaSoria/char-device.git',
+        imagen: 'chardev.png',
+        git: 'GitLab'
+    },
+    {
+        titulo: 'Sakura: Ikebana Delivery',
+        herramientas: ['Java'],
+        descripcion: 'Sakura Haruno debe realiza las entregas de arreglos florales tipicos japoneses (Ikebana). El juego consiste en ayudar a Sakura a entregar los arreglos mientras esquiva y combate a ninjas enemigos sin perder la vida.',
+        repositorio: 'https://gitlab.com/Adriik/romero-soria-villalba-tp-p1',
+        imagen: 'sakura.png',
+        git: 'GitLab'
+    },
+
+
+
+    {
         titulo: 'KarU',
-        descripcion: 'Desarrollo de aplicación web capaz soportar las actividades de una empresa que se dedica a la compra-venta de vehículos usados. Nuestro equipo de trabajo se enfocará en el desarrollo del módulo “Operaciones del Área Técnica”, responsable de la gestión de cotizaciones, revisiones y diagnósticos físicos, y garantías. Para llevar a cabo este proyecto fue necesario adentrarnos en la lógica de negocio de una empresa de compra-venta de autos usados e investigar, proponer y justificar las funcionalidades que estén relacionadas con lo pedido.',
+        herramientas: ['Python', 'Django', 'Django REST Framework', 'SQLite', 'React'],
+        descripcion: 'Desarrollamos una aplicación web para apoyar a una empresa de compra-venta de vehículos usados, enfocándonos en el módulo "Operaciones del Área Técnica". Este módulo gestiona cotizaciones, revisiones, diagnósticos físicos y garantías. El proyecto requirió analizar la lógica de negocio del sector y proponer funcionalidades alineadas con sus necesidades.',
         repositorio: 'https://github.com/Autotech-UNGS/TP-Principal.git',
         imagen: 'auto.jpeg',
         git: 'GitHub'
     },
     {
-        titulo: 'Char Device',
-        descripcion: 'Desarrollo de driver para la materia Sistemas Operativos y Redes II',
-        repositorio: 'https://gitlab.com/LuciaSoria/char-device.git',
-        imagen: 'charDevice.jpeg',
-        git: 'GitLab'
-    },
-    {
         titulo: 'Supermielle',
-        descripcion: 'Proyecyo de Base de Datos: Sistema de tarjetas con distintos clientes y comercios. Los clientes tienen tarjeta y hacen compras, las cuales pueden ser aceptadas o rechazadas. Los clientes tienen la posibilidad de generar resúmenes de compra de cada periodo del año 2022, indicando su número de cliente y el periodo del cual desean ver sus gastos. Además, el banco cuenta con un sistema de alertas que se disparan cada vez que se efectuan compras que puedan considerarse sospechosas y cuando se efectúan rechazos. Esto es para poder hablar con el cliente y desacartar que haya sucedido un fraude.',
+        herramientas: ['PostgeSQL', 'psql', 'BoltDB', 'Go', 'Triggers', 'Store Procedures'],
+        descripcion: 'Sistema de tarjetas para clientes y comercios, donde los clientes realizan compras que pueden ser aceptadas o rechazadas. Permite generar resúmenes de gastos por periodo del año 2022 y cuenta con un sistema de alertas para compras sospechosas o rechazos, ayudando a prevenir fraudes.',
         repositorio: 'https://gitlab.com/gastonv/martinelli-soria-villalba-tp.git',
         imagen: 'supermielle.jpeg',
         git: 'GitLab'

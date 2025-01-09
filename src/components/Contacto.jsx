@@ -29,10 +29,10 @@ export const Contacto = () => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h5"
                     component="div"
                 >
-                    Contáctame:
+                    Contáctame
                 </Typography>
                 <IconButton
                     role="button"
