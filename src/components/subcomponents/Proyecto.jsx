@@ -9,11 +9,22 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import LanguageIcon from '@mui/icons-material/Language';
+import { useMediaQuery } from '@mui/material';
 
-export const Proyecto = ({ titulo, descripcion, repositorio, imagen, git, sitio = '' }) => {
+export const Proyecto = ({ proyecto }) => {
+
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detecta pantallas pequeñas
+
+  const { titulo, herramientas, descripcion, repositorio, imagen, sitio = '', git } = proyecto;
+  
+  var textoHerramientas = '';
+  herramientas.forEach( herr => {
+    textoHerramientas += '#' + herr + ' '.repeat(5);
+  });
 
   const ImgUrl = `./proyectos/${imagen}`;
-
+  
   return (
     <Card
       sx={{
@@ -87,9 +98,13 @@ export const Proyecto = ({ titulo, descripcion, repositorio, imagen, git, sitio 
           <Typography component="div" variant="h5">
             {titulo}
           </Typography>
-          <Typography variant="body1" component="div" fontSize={20}>
+          <Typography variant="body1" component="div" fontSize={20} mb={2}>
             {descripcion}
           </Typography>
+          <Typography variant="body1" component="div" fontSize={15} style={{ whiteSpace: 'pre' }}>          
+            { textoHerramientas }
+          </Typography>
+          
         </CardContent>
 
       </Box>

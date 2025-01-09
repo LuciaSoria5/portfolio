@@ -1,7 +1,7 @@
 export const proyectos = [
     {
         titulo: 'Calendario',
-        herramientas: ['JavaScript', 'React', 'React Router', 'MongoDB', 'Json Web Token', 'Node.js', 'Express', 'Redux Toolkit', 'Material UI'],
+        herramientas: ['JavaScript', 'React', 'ReactRouter', 'MongoDB', 'JsonWebToken', 'Node.js', 'Express', 'ReduxToolkit', 'MaterialUI'],
         descripcion: 'Aplicación MERN con autenticación que permite crear, editar, y eliminar eventos en un calendario compartido.',
         repositorio: 'https://github.com/LuciaSoria5/CalendarApp.git',
         imagen: 'calendar.png',
@@ -10,7 +10,7 @@ export const proyectos = [
     },
     {
         titulo: 'AgendApp',
-        herramientas: ['JavaScript', 'React', 'React Router', 'Firebase', 'Redux Toolkit', 'Cloudinary', 'Material UI'],
+        herramientas: ['JavaScript', 'React', 'ReactRouter', 'Firebase', 'ReduxToolkit', 'Cloudinary', 'MaterialUI'],
         descripcion: 'Aplicación con autenticación que permite crear, editar, y eliminar entradas en una agenda.',
         repositorio: 'https://github.com/LuciaSoria5/JournalApp.git',
         imagen: 'journal.png',
@@ -19,15 +19,15 @@ export const proyectos = [
     },
     {
         titulo: 'KarU',
-        herramientas: ['Python', 'Django', 'Django REST Framework', 'SQLite', 'React', 'Metabase'],
+        herramientas: ['Python', 'Django', 'DjangoRESTFramework', 'SQLite', 'React', 'Metabase'],
         descripcion: 'Desarrollamos una aplicación web para apoyar a una empresa de compra-venta de vehículos usados, enfocándonos en el módulo "Operaciones del Área Técnica". Este módulo gestiona cotizaciones, revisiones, diagnósticos físicos y garantías. El proyecto requirió analizar la lógica de negocio del sector y proponer funcionalidades alineadas con sus necesidades.',
         repositorio: 'https://github.com/Autotech-UNGS/TP-Principal.git',
-        imagen: 'pp1_2.png',
+        imagen: 'pp1_1.png',
         git: 'GitHub'
     },
     {
         titulo: 'Domingus',
-        herramientas: ['Java', 'Maven', 'Patrones de diseño','MVC', 'SOLID'],
+        herramientas: ['Java', 'Maven', 'PatronesDeDiseño','MVC', 'SOLID'],
         descripcion: 'Proyecto que simula el aviso de modificaciones en la oferta academica de la Universidad Nacional de General Sarmiento a través de un ChatBot desarrollado en Java utilizando distintos patrones de diseño y control de dependencias.',
         repositorio: 'https://github.com/jisantillan/tp-pp2-core.git',
         imagen: 'domingus.png',
@@ -51,7 +51,7 @@ export const proyectos = [
     },
     {
         titulo: 'Char Device',
-        herramientas: 'C',
+        herramientas: ['C'],
         descripcion: 'Desarrollo de un módulo de kernel para un dispositivo de carácter. Incluye funciones de inicialización y limpieza, así manejo de la apertura y cierre del dispositivo. El dispositivo permitirá escribir datos, los cuales se imprimirán en el kernel, y devolverá lo último escrito al ser leído. Además, se implementó la funcionalidad de devolver el mensaje invertido carácter por carácter al leerlo nuevamente.',
         repositorio: 'https://gitlab.com/LuciaSoria/char-device.git',
         imagen: 'chardev.png',
@@ -67,7 +67,7 @@ export const proyectos = [
     },
     {
         titulo: 'Supermielle',
-        herramientas: ['PostgeSQL', 'psql', 'BoltDB', 'Go', 'Triggers', 'Store Procedures'],
+        herramientas: ['PostgeSQL', 'psql', 'BoltDB', 'Go', 'Triggers', 'StoreProcedures'],
         descripcion: 'Sistema de tarjetas para clientes y comercios, donde los clientes realizan compras que pueden ser aceptadas o rechazadas. Permite generar resúmenes de gastos por periodo del año 2022 y cuenta con un sistema de alertas para compras sospechosas o rechazos, ayudando a prevenir fraudes.',
         repositorio: 'https://gitlab.com/gastonv/martinelli-soria-villalba-tp.git',
         imagen: 'postgresql.jpg',

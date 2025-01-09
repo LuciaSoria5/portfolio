@@ -46,12 +46,7 @@ export const Proyectos = forwardRef((props, ref) => {
                     listaProyectos.map(proyecto => (
                         <SwiperSlide key={proyecto.titulo}>
                             <Proyecto
-                                titulo={proyecto.titulo}
-                                descripcion={proyecto.descripcion}
-                                repositorio={proyecto.repositorio}
-                                imagen={proyecto.imagen}
-                                sitio={proyecto.sitio}
-                                git={proyecto.git}
+                                proyecto = {proyecto}
                             />
                         </SwiperSlide>
                     ))
