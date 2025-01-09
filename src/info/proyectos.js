@@ -18,9 +18,41 @@ export const proyectos = [
         git: 'GitHub'
     },
     {
+        titulo: 'KarU',
+        herramientas: ['Python', 'Django', 'Django REST Framework', 'SQLite', 'React', 'Metabase'],
+        descripcion: 'Desarrollamos una aplicación web para apoyar a una empresa de compra-venta de vehículos usados, enfocándonos en el módulo "Operaciones del Área Técnica". Este módulo gestiona cotizaciones, revisiones, diagnósticos físicos y garantías. El proyecto requirió analizar la lógica de negocio del sector y proponer funcionalidades alineadas con sus necesidades.',
+        repositorio: 'https://github.com/Autotech-UNGS/TP-Principal.git',
+        imagen: 'pp1_2.png',
+        git: 'GitHub'
+    },
+    {
+        titulo: 'Domingus',
+        herramientas: ['Java', 'Maven', 'Patrones de diseño','MVC', 'SOLID'],
+        descripcion: 'Proyecto que simula el aviso de modificaciones en la oferta academica de la Universidad Nacional de General Sarmiento a través de un ChatBot desarrollado en Java utilizando distintos patrones de diseño y control de dependencias.',
+        repositorio: 'https://github.com/jisantillan/tp-pp2-core.git',
+        imagen: 'domingus.png',
+        git: 'GitHub'
+    },
+    {
+        titulo: 'StyleBus',
+        herramientas: ['JavaScript', 'HTML', 'CSS'],
+        descripcion: 'Sitio web dedicado a la compra de pasajes de ómnibus y vouchers de excursiones (proyecto universitario).',
+        repositorio: 'https://gitlab.com/ingenieria-de-software-y-especificacion-de-software/tp-especificacion-de-software.git',
+        imagen: 'StyleBus.png',
+        git: 'GitLab'
+    },
+    {
+        titulo: 'Maratón Malvinas',
+        herramientas: ['JavaScript', 'HTML', 'CSS'],
+        descripcion: 'Sitio web que permite visualizar información e inscribirse como participante/colaborador a una maratón llevada a cabo en Malvinas Argentinas (proyecto universitario)',
+        repositorio: 'https://gitlab.com/ingenieria-de-software-y-especificacion-de-software/tp-ingenieria-de-software.git',
+        imagen: 'maraton.png',
+        git: 'GitLab'
+    },
+    {
         titulo: 'Char Device',
         herramientas: 'C',
-        descripcion: 'Desarrollo de driver para la materia Sistemas Operativos y Redes II',
+        descripcion: 'Desarrollo de un módulo de kernel para un dispositivo de carácter. Incluye funciones de inicialización y limpieza, así manejo de la apertura y cierre del dispositivo. El dispositivo permitirá escribir datos, los cuales se imprimirán en el kernel, y devolverá lo último escrito al ser leído. Además, se implementó la funcionalidad de devolver el mensaje invertido carácter por carácter al leerlo nuevamente.',
         repositorio: 'https://gitlab.com/LuciaSoria/char-device.git',
         imagen: 'chardev.png',
         git: 'GitLab'
@@ -28,28 +60,17 @@ export const proyectos = [
     {
         titulo: 'Sakura: Ikebana Delivery',
         herramientas: ['Java'],
-        descripcion: 'Sakura Haruno debe realiza las entregas de arreglos florales tipicos japoneses (Ikebana). El juego consiste en ayudar a Sakura a entregar los arreglos mientras esquiva y combate a ninjas enemigos sin perder la vida.',
+        descripcion: 'Videojuego - Sakura Haruno debe realiza las entregas de arreglos florales tipicos japoneses (Ikebana). El juego consiste en ayudar a Sakura a entregar los arreglos mientras esquiva y combate a ninjas enemigos sin perder la vida.',
         repositorio: 'https://gitlab.com/Adriik/romero-soria-villalba-tp-p1',
         imagen: 'sakura.png',
         git: 'GitLab'
-    },
-
-
-
-    {
-        titulo: 'KarU',
-        herramientas: ['Python', 'Django', 'Django REST Framework', 'SQLite', 'React'],
-        descripcion: 'Desarrollamos una aplicación web para apoyar a una empresa de compra-venta de vehículos usados, enfocándonos en el módulo "Operaciones del Área Técnica". Este módulo gestiona cotizaciones, revisiones, diagnósticos físicos y garantías. El proyecto requirió analizar la lógica de negocio del sector y proponer funcionalidades alineadas con sus necesidades.',
-        repositorio: 'https://github.com/Autotech-UNGS/TP-Principal.git',
-        imagen: 'auto.jpeg',
-        git: 'GitHub'
     },
     {
         titulo: 'Supermielle',
         herramientas: ['PostgeSQL', 'psql', 'BoltDB', 'Go', 'Triggers', 'Store Procedures'],
         descripcion: 'Sistema de tarjetas para clientes y comercios, donde los clientes realizan compras que pueden ser aceptadas o rechazadas. Permite generar resúmenes de gastos por periodo del año 2022 y cuenta con un sistema de alertas para compras sospechosas o rechazos, ayudando a prevenir fraudes.',
         repositorio: 'https://gitlab.com/gastonv/martinelli-soria-villalba-tp.git',
-        imagen: 'supermielle.jpeg',
+        imagen: 'postgresql.jpg',
         git: 'GitLab'
     }
 ]
