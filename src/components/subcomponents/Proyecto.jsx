@@ -37,7 +37,7 @@ export const Proyecto = ({ proyecto }) => {
               display: 'block',          // Usa flexbox para manejar los iconos
               alignItems: 'center',     // Centra los iconos horizontalmente
               width: '100%',  // El ancho será controlado por el `Grid`
-              height: 300,    // Fija la altura
+              height: 400,    // Fija la altura
               overflowY: 'auto',
               overflowX: 'auto',
             }}
@@ -48,7 +48,7 @@ export const Proyecto = ({ proyecto }) => {
                 alignSelf: 'stretch', // Ocupa todo el ancho
               }}
             >
-              <Typography component="div" variant="h5">
+              <Typography component="div" variant="h5" mb={1}>
                 {titulo}
               </Typography>
               <Typography variant="body1" component="div" fontSize={20} mb={2}>
@@ -63,13 +63,14 @@ export const Proyecto = ({ proyecto }) => {
               <Typography
                 variant="body1"
                 component="div"
-                fontSize={15}
+                fontSize={17}
                 // style={{ whiteSpace:'pre'}}
                 sx={{
                   display: 'block', // Hace que el Typography sea un bloque
                   width: '100%', // Hace que ocupe todo el ancho disponible
                   wordWrap: 'break-word', // Permite que las palabras largas se dividan en la siguiente línea
                   whiteSpace: 'normal', // Permite que el texto se divida en varias líneas
+
                 }}
               >
                 {textoHerramientas}
@@ -136,9 +137,8 @@ export const Proyecto = ({ proyecto }) => {
           </Card>
         )
 
-
-
         :
+
         <Card
           sx={{
             display: 'flex',
@@ -210,13 +210,13 @@ export const Proyecto = ({ proyecto }) => {
                 alignSelf: 'stretch', // Ocupa todo el ancho
               }}
             >
-              <Typography component="div" variant="h5">
+              <Typography component="div" variant="h5"  mb={1}>
                 {titulo}
               </Typography>
               <Typography variant="body1" component="div" fontSize={20} mb={2}>
                 {descripcion}
               </Typography>
-              <Typography variant="body1" component="div" fontSize={15} style={{ whiteSpace: 'pre' }}>
+              <Typography variant="body1" component="div" fontSize={17} style={{ whiteSpace: 'pre' }}>
                 {textoHerramientas}
               </Typography>
 
