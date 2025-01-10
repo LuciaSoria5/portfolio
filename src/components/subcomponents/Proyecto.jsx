@@ -38,7 +38,7 @@ export const Proyecto = ({ proyecto }) => {
               display: 'block',          // Usa flexbox para manejar los iconos
               alignItems: 'center',     // Centra los iconos horizontalmente
               width: '100%',  // El ancho será controlado por el `Grid`
-              height: 400,    // Fija la altura
+              height: 300,    // Fija la altura
               overflowY: 'auto',
               overflowX: 'auto',
             }}
@@ -123,7 +123,9 @@ export const Proyecto = ({ proyecto }) => {
                 sx={{
                   width: '100%',
                   height: 'auto',
-                  objectFit: 'cover' /* Imagen consistente */
+                  objectFit: 'cover', /* Imagen consistente */
+                  display: 'block', // Necesario para centrar con margin
+                  margin: '0 auto',
                 }}
                 image={ImgUrl}
                 alt={titulo}
