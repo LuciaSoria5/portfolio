@@ -41,7 +41,7 @@ export const Proyectos = forwardRef((props, ref) => {
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
-                style={{ padding: '30px' }} // Añadir espacio extra para la paginación
+                style={{ padding: '20px' }} // Añadir espacio extra para la paginación
             > {
                     listaProyectos.map(proyecto => (
                         <SwiperSlide key={proyecto.titulo}>

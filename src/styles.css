@@ -14,20 +14,23 @@ body {
   color-scheme: light dark;
 }
 
-.mySwiper .swiper-wrapper {
-  border-color: var(--morado);
-  border-radius: '100%';
-
-}
+/* .mySwiper .swiper-wrapper .swiper-slide-prev{
+  /* display: none; */
+/* } */ 
 
 .mySwiper .swiper-pagination {
   position: absolute; /* Mantener absoluto */
-  /* bottom: -100px;      Mover los puntos hacia abajo */
   left: 0;
   width: 100%;        /* Asegurar que estén centrados */
   text-align: center;
   box-shadow: none;
-  margin-top: '';
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0 !important;
+  top: auto;
+  left: 0;
+  width: 100%;
 }
 
 /* .mySwiper .swiper-pagination-bullets {
