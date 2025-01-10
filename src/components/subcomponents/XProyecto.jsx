@@ -12,6 +12,7 @@ export const XProyecto = ({ titulo, descripcion, repositorio, imagen, git, sitio
 
   return (
     <Card 
+    
       className="overflow-auto" 
       sx={{ 
         width: '100%',  // El ancho será controlado por el `Grid`

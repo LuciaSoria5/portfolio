@@ -12,25 +12,32 @@ export const Tecnologias = () => {
             justifyContent="center"
             sx={{
                 flexGrow: 1,
-                padding: 3,
             }}
         >
             <Box
                 sx={{
                     display: 'block', // Necesario para centrar con margin
                     margin: '0 auto', // Centra horizontalmente}
-                }}>
+                }}
+            >
                 <Typography 
                     variant='h2' 
                     component='div' 
                     gutterBottom
                     sx={{
                         fontFamily: 'Georgia, serif',
+                        textAlign: 'center'
                     }}
                 >
                    Más información
                 </Typography>
             </Box>
+            <Box
+                sx={{
+                     paddingLeft: '40px',
+                     paddingRight: '40px',
+                }}
+                >
             <div className="accordion-item">
                 <h2 className="accordion-header">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -81,6 +88,7 @@ export const Tecnologias = () => {
                     </div>
                 </div>
             </div>
+            </Box>
             {/* <Box
                 component='img'
                 src='/guarda.png'

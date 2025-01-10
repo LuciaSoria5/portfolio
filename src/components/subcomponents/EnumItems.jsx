@@ -10,7 +10,7 @@ export const EnumItems = ({ json }) => {
       justifyContent="center"
       spacing={6}
       sx={{
-        padding: '24px',
+        // padding: '24px',
       }}
     >
       {json.map((area, indice) => {
@@ -24,7 +24,7 @@ export const EnumItems = ({ json }) => {
             <Typography 
               variant="h4" 
               component="div" 
-              padding='24px'
+              // padding='24px'
               sx={{
                 fontFamily: 'Andale Mono, monospace',
               }}
