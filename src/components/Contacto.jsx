@@ -31,6 +31,9 @@ export const Contacto = () => {
                 <Typography
                     variant="h5"
                     component="div"
+                    sx={{
+                        // fontFamily: 'Andale Mono, monospace',
+                    }}
                 >
                     Contáctame
                 </Typography>
@@ -74,9 +77,10 @@ export const Contacto = () => {
                     sx={{
                         display: 'flex', // Para alinear los elementos horizontalmente
                         alignItems: 'center', // Centra verticalmente los corazones y el texto
+                        fontFamily: 'Georgia, serif',
                     }}
                 >
-                    <FavoriteIcon sx={{ mr: 1 }} />
+                    <FavoriteIcon sx={{ mr: 1, }} />
                     Gracias por tu visita   
                     <FavoriteIcon sx={{ ml: 1 }} />
                 </Typography>

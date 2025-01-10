@@ -72,7 +72,7 @@ export const Navbar = ({ posiciones = {} }) => {
               display: { xs: 'none', md: 'flex' },
               fontWeight: 900,
               textDecoration: 'none',
-
+              fontFamily: 'Georgia, serif',
             }}
           >
             Lucía Soria
@@ -107,15 +107,15 @@ export const Navbar = ({ posiciones = {} }) => {
             >
               <MenuItem key="sobreMi" onClick={irArriba}>
                 <Face3Icon />
-                <Typography sx={{ textAlign: 'center' }}>Sobre mi</Typography>
+                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Sobre mi</Typography>
               </MenuItem>
               <MenuItem key="proyectos" onClick={irProyectos}>
                 <ComputerIcon />
-                <Typography sx={{ textAlign: 'center' }}>Proyectos</Typography>
+                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Proyectos</Typography>
               </MenuItem>
               <MenuItem key="contacto" onClick={irAbajo} start>
                 <ContactPageIcon />
-                <Typography sx={{ textAlign: 'center' }}>Contacto</Typography>
+                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Contacto</Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -131,7 +131,7 @@ export const Navbar = ({ posiciones = {} }) => {
               flexGrow: 1,
               fontWeight: 700,
               textDecoration: 'none',
-
+              fontFamily: 'Georgia, serif',
             }}
           >
             Lucía Soria
@@ -141,7 +141,7 @@ export const Navbar = ({ posiciones = {} }) => {
               key="sobreMi"
               onClick={irArriba}
               startIcon={<Face3Icon />}
-              sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
+              sx={{ my: 2, color: 'white', display: 'block', mr: 2, fontFamily:'Andale Mono, monospace'}}
             >
               Sobre mi
             </Button>
@@ -149,7 +149,7 @@ export const Navbar = ({ posiciones = {} }) => {
               key="proyectos"
               onClick={irProyectos}
               startIcon={<ComputerIcon />}
-              sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
+              sx={{ my: 2, color: 'white', display: 'block', mr: 2, fontFamily:'Andale Mono, monospace' }}
             >
               Proyectos
             </Button>
@@ -157,7 +157,7 @@ export const Navbar = ({ posiciones = {} }) => {
               key="contacto"
               onClick={irAbajo}
               startIcon={<ContactPageIcon />}
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 2, color: 'white', display: 'block', fontFamily:'Andale Mono, monospace' }}
             >
               Contacto
             </Button>

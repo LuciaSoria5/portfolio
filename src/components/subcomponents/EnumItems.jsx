@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 
 export const EnumItems = ({ json }) => {
@@ -21,7 +21,16 @@ export const EnumItems = ({ json }) => {
             xs={12} sm={6} md={4} lg={3}
             key={indice}
           >
-            <h4><CheckIcon fontSize='large'/>{clave}</h4>
+            <Typography 
+              variant="h4" 
+              component="div" 
+              padding='24px'
+              sx={{
+                fontFamily: 'Andale Mono, monospace',
+              }}
+            >
+              <CheckIcon fontSize='large'/>{clave}
+            </Typography>
             {valor.map((item, i) => (
               <Grid key={i}>
                 {Object.entries(item).map(([subKey, subValue], j) => (

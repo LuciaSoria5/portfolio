@@ -20,7 +20,14 @@ export const Tecnologias = () => {
                     display: 'block', // Necesario para centrar con margin
                     margin: '0 auto', // Centra horizontalmente}
                 }}>
-                <Typography variant='h2' component='div' gutterBottom>
+                <Typography 
+                    variant='h2' 
+                    component='div' 
+                    gutterBottom
+                    sx={{
+                        fontFamily: 'Georgia, serif',
+                    }}
+                >
                    Más información
                 </Typography>
             </Box>

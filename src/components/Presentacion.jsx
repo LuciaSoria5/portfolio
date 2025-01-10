@@ -35,16 +35,34 @@ export const Presentacion = () => {
           textAlign='center'
         >
           <Box sx={{ padding: '16px' }}>
-            <Typography variant="h3" component="div">
-              ¡Hola! Mi nombre es
+            <Typography 
+              variant="h3" 
+              component="div"
+              sx={{
+                fontFamily: 'Georgia, serif',
+              }}
+            >
+              Mi nombre es
             </Typography>
-            <Typography variant="h1" component="div" padding='24px'>
-              Lucía
+            <Typography 
+              variant="h1" 
+              component="div" 
+              padding='24px'
+              sx={{
+                fontFamily: 'Georgia, serif',
+              }}
+            >
+              Lucía Soria
             </Typography>
           </Box>
 
           <Box
-            sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            sx={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center',
+              }}
+            >
             <List>
               <ListItem >
                 <ListItemIcon>
@@ -52,7 +70,7 @@ export const Presentacion = () => {
                 </ListItemIcon>
                 <ListItemText
                   primary="Desarrolladora Fullstack"
-                  primaryTypographyProps={{ variant: 'h4' }}
+                  primaryTypographyProps={{ variant: 'h4', fontFamily: 'Georgia, serif', }}
                 />
               </ListItem>
               <ListItem>
@@ -61,7 +79,7 @@ export const Presentacion = () => {
                 </ListItemIcon>
                 <ListItemText
                   primary="Docente de Sistemas"
-                  primaryTypographyProps={{ variant: 'h4' }}
+                  primaryTypographyProps={{ variant: 'h4', fontFamily: 'Georgia, serif', }}
                 />
               </ListItem>
             </List>

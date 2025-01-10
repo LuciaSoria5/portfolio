@@ -42,11 +42,18 @@ export const SobreMi = () => {
           textAlign={isSmallScreen ? 'center' : 'left'}
         >
           <Box sx={{ padding: '16px' }}>
-            <Typography variant='h2' component='div' gutterBottom>
+            <Typography 
+              variant='h2' 
+              component='div' 
+              gutterBottom
+              sx={{
+                fontFamily: 'Georgia, serif',
+              }}
+            >
               Sobre mí
             </Typography>
             {desc.map(parrafo => (
-              <Typography variant='body1' fontSize={20} key={getCont()}>
+              <Typography variant='body1' fontSize={20} key={getCont()} fontFamily={'Andale Mono, monospace'}>
                 {parrafo}
               </Typography>
             ))}

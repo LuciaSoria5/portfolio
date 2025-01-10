@@ -12,6 +12,7 @@ export const Habilidades = () => {
       spacing={3}
       sx={{
         padding: '24px',
+        fontFamily: 'Andale Mono, monospace',
       }}
 
     >

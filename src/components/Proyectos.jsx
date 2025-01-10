@@ -24,7 +24,14 @@ export const Proyectos = forwardRef((props, ref) => {
             }}
         >
             <Box >
-                <Typography variant='h2' component='div' gutterBottom>
+                <Typography 
+                    variant='h2' 
+                    component='div' 
+                    gutterBottom
+                    sx={{
+                        fontFamily: 'Georgia, serif',
+                    }}
+                >
                     Mis proyectos
                 </Typography>
             </Box>

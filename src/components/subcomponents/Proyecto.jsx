@@ -52,15 +52,9 @@ export const Proyecto = ({ proyecto }) => {
               <Typography component="div" variant="h5" mb={1}>
                 {titulo}
               </Typography>
-              <Typography variant="body1" component="div" fontSize={20} mb={2}>
+              <Typography variant="body1" component="div" fontSize={20} mb={3}>
                 {descripcion}
               </Typography>
-              {/* <Block
-                // sx={{
-                //   display: 'block',
-                //   justifyContent: 'center',
-                // }}
-              > */}
               <Typography
                 variant="body1"
                 component="div"
@@ -71,7 +65,7 @@ export const Proyecto = ({ proyecto }) => {
                   width: '100%', // Hace que ocupe todo el ancho disponible
                   wordWrap: 'break-word', // Permite que las palabras largas se dividan en la siguiente línea
                   whiteSpace: 'normal', // Permite que el texto se divida en varias líneas
-
+                  fontFamily:'Andale Mono, monospace',
                 }}
               >
                 {textoHerramientas}
@@ -216,7 +210,7 @@ export const Proyecto = ({ proyecto }) => {
               <Typography variant="body1" component="div" fontSize={20} mb={2}>
                 {descripcion}
               </Typography>
-              <Typography variant="body1" component="div" fontSize={17} >
+              <Typography variant="body1" component="div" fontSize={17} fontFamily={'Andale Mono, monospace'}>
                 {textoHerramientas}
               </Typography>
 
