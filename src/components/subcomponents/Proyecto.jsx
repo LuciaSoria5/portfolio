@@ -16,6 +16,7 @@ export const Proyecto = ({ proyecto }) => {
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detecta pantallas pequeñas
+  const isMediumScreen = useMediaQuery(theme.breakpoints.down('xl')); // Detecta pantallas pequeñas
 
   const { titulo, herramientas, descripcion, repositorio, imagen, sitio = '', git } = proyecto;
 
@@ -28,7 +29,7 @@ export const Proyecto = ({ proyecto }) => {
 
   return (
     <>
-      {isSmallScreen
+      {isSmallScreen || isMediumScreen
         ?
         (
           <Card
@@ -143,7 +144,7 @@ export const Proyecto = ({ proyecto }) => {
           sx={{
             display: 'flex',
             width: '100%',  // El ancho será controlado por el `Grid`
-            height: 300,    // Fija la altura
+            height: 400,    // Fija la altura
             overflowY: 'auto',
             overflowX: 'auto',
           }}
@@ -205,7 +206,6 @@ export const Proyecto = ({ proyecto }) => {
             </Box>
 
             <CardContent
-
               sx={{
                 alignSelf: 'stretch', // Ocupa todo el ancho
               }}
@@ -216,7 +216,7 @@ export const Proyecto = ({ proyecto }) => {
               <Typography variant="body1" component="div" fontSize={20} mb={2}>
                 {descripcion}
               </Typography>
-              <Typography variant="body1" component="div" fontSize={17} style={{ whiteSpace: 'pre' }}>
+              <Typography variant="body1" component="div" fontSize={17} >
                 {textoHerramientas}
               </Typography>
 

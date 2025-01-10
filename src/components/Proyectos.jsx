@@ -20,7 +20,7 @@ export const Proyectos = forwardRef((props, ref) => {
             container
             justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
-                padding: '14px', // Espacio alrededor de todo el contenido
+                padding: '20px', // Espacio alrededor de todo el contenido
             }}
         >
             <Box >

@@ -1,20 +1,48 @@
+:root {
+  --morado: #2e1e45;
+  --violeta: #612a52;
+  --fucsia: #ba3259;
+  --salmon: #ff695c;
+  --caqui: #ccbca1;
+  --gris: #ececec;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: black; */
+}
+
+.mySwiper .swiper-wrapper {
+  border-color: var(--morado);
+  border-radius: '100%';
+
 }
 
 .mySwiper .swiper-pagination {
   position: absolute; /* Mantener absoluto */
-  bottom: -20px;      /* Mover los puntos hacia abajo */
+  /* bottom: -100px;      Mover los puntos hacia abajo */
   left: 0;
   width: 100%;        /* Asegurar que estén centrados */
   text-align: center;
   box-shadow: none;
+  margin-top: '';
+}
+
+/* .mySwiper .swiper-pagination-bullets {
+} */
+
+.mySwiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: var(--caqui);
+}
+
+.mySwiper .swiper-button-next {
+  color: var(--caqui);
+}
+
+.mySwiper .swiper-button-prev {
+  color: var(--caqui);
 }
 
 /* :root {
