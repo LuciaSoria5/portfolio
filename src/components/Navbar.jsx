@@ -15,6 +15,62 @@ import Face3Icon from '@mui/icons-material/Face3';
 import ComputerIcon from '@mui/icons-material/Computer';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 
+const textoEstiloChico = {
+    fontFamily: 'Andale Mono, monospace',
+    color: 'primary.main',
+    ml: '8px',
+
+};
+
+const textoEstiloGrande = {
+    fontFamily: 'Andale Mono, monospace',
+    color: 'primary.color',
+};
+
+const boxHashEstiloChico = {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '8px',
+    borderRadius: '8px',
+    transition: 'background-color 0.3s, color 0.3s',
+    color: 'inherit',
+    '&:hover': {
+        backgroundColor: '#f0f0f0',
+    },
+    '&:active': {
+        backgroundColor: '#e0e0e0',
+    },
+}
+
+const boxHashEstiloGrande = {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '8px',
+    borderRadius: '8px',
+    transition: 'background-color 0.3s, color 0.3s',
+    color: 'inherit',
+    '&:hover': {
+        backgroundColor: '#purple.color',
+    },
+    '&:active': {
+        backgroundColor: '#e0e0e0',
+    },
+}
+
+const hashEstiloChico = {
+    display: 'flex',
+    alignItems: 'center',
+    textDecoration: 'none',
+    color: 'inherit',
+}
+
+const hashEstiloGrande = {
+    // alignItems: 'center',
+    textDecoration: 'none',
+    color: 'primary.color',
+    padding: '8px',
+}
+
 export const Navbar = () => {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -32,40 +88,6 @@ export const Navbar = () => {
         const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     };
-
-    const textoEstiloChico = {
-        fontFamily: 'Andale Mono, monospace',
-        color: 'primary.main',
-        ml: '8px',
-
-    };
-
-    const textoEstiloGrande = {
-        fontFamily: 'Andale Mono, monospace',
-        color: 'primary.color',
-    };
-
-    const boxHashEstilo = {
-        display: 'flex',
-        alignItems: 'center',
-        padding: '8px',
-        borderRadius: '8px',
-        transition: 'background-color 0.3s, color 0.3s',
-        color: 'inherit',
-        '&:hover': {
-            backgroundColor: '#f0f0f0',
-        },
-        '&:active': {
-            backgroundColor: '#e0e0e0',
-        },
-    }
-
-    const hashEstilo = { 
-        display: 'flex',
-        alignItems: 'center',
-        textDecoration: 'none',
-        color: 'inherit',
-    }
 
     return (
         <AppBar position="fixed"  >
@@ -124,33 +146,33 @@ export const Navbar = () => {
                                 cursor: 'pointer'
                             }}
                         >
-                            <Box sx={boxHashEstilo}>
+                            <Box sx={boxHashEstiloChico}>
                                 <HashLink
                                     to={'/LuciaSoria#sobre-mi'}
                                     scroll={scrollWithOffset}
-                                    style={hashEstilo}
+                                    style={hashEstiloChico}
                                 >
                                     <Face3Icon sx={{ color: 'primary.main' }} />
                                     <Typography variant='h6' sx={textoEstiloChico}>Sobre mi</Typography>
                                 </HashLink>
                             </Box>
 
-                            <Box sx={boxHashEstilo}>
+                            <Box sx={boxHashEstiloChico}>
                                 <HashLink
                                     to={"/LuciaSoria#proyectos"}
                                     scroll={scrollWithOffset}
-                                    style={hashEstilo}
+                                    style={hashEstiloChico}
                                 >
                                     <ComputerIcon sx={{ color: 'primary.main' }} />
                                     <Typography variant='h6' sx={textoEstiloChico}>Proyectos</Typography>
                                 </HashLink>
                             </Box>
 
-                            <Box sx={boxHashEstilo}>
+                            <Box sx={boxHashEstiloChico}>
                                 <HashLink
                                     to={"/LuciaSoria#contacto"}
                                     scroll={scrollWithOffset}
-                                    style={hashEstilo}
+                                    style={hashEstiloChico}
                                 >
                                     <ContactPageIcon sx={{ color: 'primary.main' }} />
                                     <Typography variant='h6' sx={textoEstiloChico}>Contacto</Typography>
@@ -165,7 +187,6 @@ export const Navbar = () => {
                         variant="h4"
                         noWrap
                         role="button"
-                        // onClick={irArriba}
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -177,21 +198,46 @@ export const Navbar = () => {
                     >
                         Lucía Soria
                     </Typography>
-                    <Box justifyContent="end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        <HashLink to={"/LuciaSoria#sobre-mi"} scroll={scrollWithOffset}>
-                            <Face3Icon />
-                            <Typography sx={textoEstiloGrande}>Sobre mi</Typography>
-                        </HashLink>
+                    <Box
+                        justifyContent="end"
+                        sx={{
+                            flexGrow: 1,
+                            display: { xs: 'none', md: 'flex' },
+                            textAlign: 'center'
+                        }}
+                    >
+                        <Box sx={boxHashEstiloGrande}>
+                            <HashLink
+                                to={"/LuciaSoria#sobre-mi"}
+                                scroll={scrollWithOffset}
+                                style={hashEstiloGrande}
+                            >
+                                <Face3Icon sx={{ color: 'primary.color' }} />
+                                <Typography sx={textoEstiloGrande}>Sobre mi</Typography>
+                            </HashLink>
+                        </Box>
 
-                        <HashLink to={"/LuciaSoria#proyectos"} scroll={scrollWithOffset}>
-                            <ComputerIcon />
+                        <Box sx={boxHashEstiloGrande}>
+                        <HashLink
+                            to={"/LuciaSoria#proyectos"}
+                            scroll={scrollWithOffset}
+                            style={hashEstiloGrande}
+                        >
+                            <ComputerIcon sx={{ color: 'primary.color' }} />
                             <Typography sx={textoEstiloGrande}>Proyectos</Typography>
                         </HashLink>
+                        </Box>
 
-                        <HashLink to={"/LuciaSoria#contacto"} scroll={scrollWithOffset}>
-                            <ContactPageIcon />
+                        <Box sx={boxHashEstiloGrande}>
+                        <HashLink
+                            to={"/LuciaSoria#contacto"}
+                            scroll={scrollWithOffset}
+                            style={hashEstiloGrande}
+                        >
+                            <ContactPageIcon sx={{ color: 'primary.color' }} />
                             <Typography sx={textoEstiloGrande}>Contacto</Typography>
                         </HashLink>
+                        </Box>
                     </Box>
                 </Toolbar>
             </Container>
