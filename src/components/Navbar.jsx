@@ -1,4 +1,8 @@
 // import * as React from 'react';
+import { useState } from 'react';
+
+import { HashLink } from 'react-router-hash-link';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,163 +11,132 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import MenuItem from '@mui/material/MenuItem';
-import { useState } from 'react';
-import { useScroll } from '../hooks/useScroll';
-import { Button } from '@mui/material';
 import Face3Icon from '@mui/icons-material/Face3';
 import ComputerIcon from '@mui/icons-material/Computer';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 
-export const Navbar = ({ posiciones = {} }) => {
-  const [anchorElNav, setAnchorElNav] = useState(null);
-  const { scrollToTop, scrollToBottom, scrollTo } = useScroll();
+export const Navbar = () => {
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
 
-  const irArriba = () => {
-    handleCloseNavMenu();
-    scrollToTop({
-      duration: 20,
-      smooth: true,
-      delay: 0,
-      isDynamic: true,
-    })
-  }
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
 
-  const irAbajo = () => {
-    handleCloseNavMenu();
-    scrollToBottom({
-      duration: 20,
-      smooth: true,
-      delay: 0,
-      isDynamic: true,
-    })
-  }
+    const scrollWithOffset = (el) => {
+        const yOffset = -64; // Ajusta este valor según la altura de tu AppBar u otro elemento fijo
+        const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      };
 
-  const irProyectos = () => {
-    handleCloseNavMenu();
-    scrollTo(posiciones.proyectos.top, {
-      duration: 20,
-      smooth: true,
-      delay: 0,
-      isDynamic: true,
-    });
-  }
 
-  return (
-    <AppBar position="fixed"  >
-      <Container maxWidth="xl" >
-        <Toolbar disableGutters>
-          {/*  --------------------------------- CHICO ----------------------------------------------------  */}
-          <Typography
-            variant="h4"
-            noWrap
-            role="button"
-            onClick={irArriba}
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontWeight: 900,
-              textDecoration: 'none',
-              fontFamily: 'Georgia, serif',
-            }}
-          >
-            Lucía Soria
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+    return (
+        <AppBar position="fixed"  >
+        <Container maxWidth="xl" >
+          <Toolbar disableGutters>
+            {/*  --------------------------------- CHICO ----------------------------------------------------  */}
+            <Typography
+              variant="h4"
+              noWrap
+              role="button"
+              // onClick={irArriba}
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontWeight: 900,
+                textDecoration: 'none',
+                fontFamily: 'Georgia, serif',
               }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
             >
-              <MenuItem key="sobreMi" onClick={irArriba}>
+              Lucía Soria
+            </Typography>
+
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: 'block', md: 'none' } }}
+              >
+                <HashLink to={'/LuciaSoria#sobre-mi'} scroll={scrollWithOffset}>
+                  <Face3Icon />
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Sobre mi</Typography>
+                </HashLink>
+
+                <HashLink to={"/LuciaSoria#proyectos"} scroll={scrollWithOffset}>
+                  <ComputerIcon />
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Proyectos</Typography>
+                </HashLink>
+
+                <HashLink to={"/LuciaSoria#contacto"} scroll={scrollWithOffset}>
+                  <ContactPageIcon />
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Contacto</Typography>
+                </HashLink>
+
+              </Menu>
+            </Box>
+
+
+            {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
+            <Typography
+              variant="h4"
+              noWrap
+              role="button"
+              // onClick={irArriba}
+              sx={{
+                mr: 2,
+                display: { xs: 'flex', md: 'none' },
+                flexGrow: 1,
+                fontWeight: 700,
+                textDecoration: 'none',
+                fontFamily: 'Georgia, serif',
+              }}
+            >
+              Lucía Soria
+            </Typography>
+            <Box justifyContent="end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              <HashLink to={"/LuciaSoria#sobre-mi"} scroll={scrollWithOffset}>
                 <Face3Icon />
-                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Sobre mi</Typography>
-              </MenuItem>
-              <MenuItem key="proyectos" onClick={irProyectos}>
+                <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Sobre mi</Typography>
+              </HashLink>
+
+              <HashLink to={"/LuciaSoria#proyectos"} scroll={scrollWithOffset}>
                 <ComputerIcon />
-                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Proyectos</Typography>
-              </MenuItem>
-              <MenuItem key="contacto" onClick={irAbajo} start>
+                <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Proyectos</Typography>
+              </HashLink>
+
+              <HashLink to={"/LuciaSoria#contacto"} scroll={scrollWithOffset}>
                 <ContactPageIcon />
-                <Typography sx={{ textAlign: 'center', fontFamily:'Andale Mono, monospace' }}>Contacto</Typography>
-              </MenuItem>
-            </Menu>
-          </Box>
-          {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
-          <Typography
-            variant="h4"
-            noWrap
-            role="button"
-            onClick={irArriba}
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontWeight: 700,
-              textDecoration: 'none',
-              fontFamily: 'Georgia, serif',
-            }}
-          >
-            Lucía Soria
-          </Typography>
-          <Box justifyContent="end" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button
-              key="sobreMi"
-              onClick={irArriba}
-              startIcon={<Face3Icon />}
-              sx={{ my: 2, color: 'white', display: 'block', mr: 2, fontFamily:'Andale Mono, monospace'}}
-            >
-              Sobre mi
-            </Button>
-            <Button
-              key="proyectos"
-              onClick={irProyectos}
-              startIcon={<ComputerIcon />}
-              sx={{ my: 2, color: 'white', display: 'block', mr: 2, fontFamily:'Andale Mono, monospace' }}
-            >
-              Proyectos
-            </Button>
-            <Button
-              key="contacto"
-              onClick={irAbajo}
-              startIcon={<ContactPageIcon />}
-              sx={{ my: 2, color: 'white', display: 'block', fontFamily:'Andale Mono, monospace' }}
-            >
-              Contacto
-            </Button>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  );
+                <Typography sx={{ textAlign: 'center', fontFamily: 'Andale Mono, monospace' }}>Contacto</Typography>
+              </HashLink>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+    );
 }
