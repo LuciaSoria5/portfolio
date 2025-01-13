@@ -30,6 +30,7 @@ export const Proyectos = forwardRef((props, ref) => {
                     gutterBottom
                     sx={{
                         fontFamily: 'Georgia, serif',
+                        textAlign: 'center',
                     }}
                 >
                     Mis proyectos
