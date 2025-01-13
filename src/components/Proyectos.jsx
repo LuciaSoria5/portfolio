@@ -1,5 +1,3 @@
-import { forwardRef } from 'react';
-
 import { Box, Grid, Typography } from '@mui/material';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,12 +9,11 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { proyectos } from '../info';
 import { Proyecto } from './subcomponents';
 
-export const Proyectos = forwardRef((props, ref) => {
+export const Proyectos = () => {
     const listaProyectos = proyectos;
 
     return (
         <Grid
-            ref={ref}
             container
             justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
@@ -72,4 +69,4 @@ export const Proyectos = forwardRef((props, ref) => {
             />
         </Grid>
     );
-})
+}

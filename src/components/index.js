@@ -1,5 +1,4 @@
 export * from './Contacto';
-export * from './XNavbar';
 export * from './XXNavbar';
 export * from './Presentacion';
 export * from './Proyectos';
