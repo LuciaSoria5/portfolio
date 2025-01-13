@@ -93,22 +93,28 @@ export const Navbar = () => {
         <AppBar position="fixed"  >
             <Container maxWidth="xl" >
                 <Toolbar disableGutters>
-                    {/*  --------------------------------- CHICO ----------------------------------------------------  */}
-                    <Typography
-                        variant="h4"
-                        noWrap
-                        role="button"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontWeight: 900,
-                            textDecoration: 'none',
-                            fontFamily: 'Georgia, serif',
-                        }}
+                    <HashLink
+                        to={"/LuciaSoria#top"}
+                        style={{ textDecoration: 'none' }}
+                        scroll={scrollWithOffset}
                     >
-                        Lucía Soria
-                    </Typography>
-
+                        <Typography
+                            variant="h4"
+                            noWrap
+                            role="button"
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'none', md: 'flex' },
+                                fontWeight: 900,
+                                textDecoration: 'none',
+                                fontFamily: 'Georgia, serif',
+                                color: 'primary.color'
+                            }}
+                        >
+                            Lucía Soria
+                        </Typography>
+                    </HashLink>
+    {/*  --------------------------------- CHICO ----------------------------------------------------  */}
                     <Box
                         sx={{
                             flexGrow: 1,
@@ -181,23 +187,30 @@ export const Navbar = () => {
                         </Menu>
                     </Box>
 
-
-                    {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
-                    <Typography
-                        variant="h4"
-                        noWrap
-                        role="button"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontWeight: 700,
-                            textDecoration: 'none',
-                            fontFamily: 'Georgia, serif',
-                        }}
+                    <HashLink
+                        to={"/LuciaSoria#top"}
+                        style={{ textDecoration: 'none' }}
+                        scroll={scrollWithOffset}
                     >
-                        Lucía Soria
-                    </Typography>
+                        <Typography
+                            variant="h4"
+                            noWrap
+                            role="button"
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'flex', md: 'none' },
+                                flexGrow: 1,
+                                fontWeight: 700,
+                                textDecoration: 'none',
+                                fontFamily: 'Georgia, serif',
+                                color: 'primary.color'
+                            }}
+                        >
+                            Lucía Soria
+                        </Typography>
+                    </HashLink>
+
+    {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
                     <Box
                         justifyContent="end"
                         sx={{
@@ -218,25 +231,25 @@ export const Navbar = () => {
                         </Box>
 
                         <Box sx={boxHashEstiloGrande}>
-                        <HashLink
-                            to={"/LuciaSoria#proyectos"}
-                            scroll={scrollWithOffset}
-                            style={hashEstiloGrande}
-                        >
-                            <ComputerIcon sx={{ color: 'primary.color' }} />
-                            <Typography sx={textoEstiloGrande}>Proyectos</Typography>
-                        </HashLink>
+                            <HashLink
+                                to={"/LuciaSoria#proyectos"}
+                                scroll={scrollWithOffset}
+                                style={hashEstiloGrande}
+                            >
+                                <ComputerIcon sx={{ color: 'primary.color' }} />
+                                <Typography sx={textoEstiloGrande}>Proyectos</Typography>
+                            </HashLink>
                         </Box>
 
                         <Box sx={boxHashEstiloGrande}>
-                        <HashLink
-                            to={"/LuciaSoria#contacto"}
-                            scroll={scrollWithOffset}
-                            style={hashEstiloGrande}
-                        >
-                            <ContactPageIcon sx={{ color: 'primary.color' }} />
-                            <Typography sx={textoEstiloGrande}>Contacto</Typography>
-                        </HashLink>
+                            <HashLink
+                                to={"/LuciaSoria#contacto"}
+                                scroll={scrollWithOffset}
+                                style={hashEstiloGrande}
+                            >
+                                <ContactPageIcon sx={{ color: 'primary.color' }} />
+                                <Typography sx={textoEstiloGrande}>Contacto</Typography>
+                            </HashLink>
                         </Box>
                     </Box>
                 </Toolbar>
