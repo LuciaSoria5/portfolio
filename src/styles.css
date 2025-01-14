@@ -14,6 +14,10 @@ body {
   color-scheme: light dark;
 }
 
+estrellas {
+  background-image: url("./fondoEstrellas.jpg");
+}
+
 h3 {
   /* font-family: Georgia, serif; */
   font-family: Andale Mono, monospace;

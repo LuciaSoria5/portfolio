@@ -60,7 +60,7 @@ export const Proyectos = () => {
             </Swiper>
             <Box
                 component='img'
-                src='/guarda.png'
+                src='/img/guarda.png'
                 alt='Imagen'
                 sx={{
                     width: '48%', // Imagen ocupa todo el ancho disponible

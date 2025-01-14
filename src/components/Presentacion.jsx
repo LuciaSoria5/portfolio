@@ -1,5 +1,4 @@
-import { Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useMediaQuery, useTheme } from '@mui/material'
-import StarIcon from '@mui/icons-material/Star';
+import { Box, Grid, List, ListItem, ListItemIcon, ListItemText, Typography, useMediaQuery, useTheme } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export const Presentacion = () => {
@@ -9,7 +8,10 @@ export const Presentacion = () => {
   return (
     <Box
       sx={{
+        // height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
+        flex: '1 0 auto',
         justifyContent: 'center',
         alignItems: 'center',
         padding: '30px',
@@ -96,7 +98,7 @@ export const Presentacion = () => {
         >
           <Box
             component='img'
-            src='/chica.png'
+            src='/img/chica.png'
             alt='Imagen'
             sx={{
               width: '100%', // Imagen ocupa todo el ancho disponible
@@ -109,7 +111,7 @@ export const Presentacion = () => {
             }}
           />
         </Grid>
-      <Box
+      {/* <Box
         component='img'
         src='/guarda.png'
         alt='Imagen'
@@ -118,7 +120,7 @@ export const Presentacion = () => {
           maxWidth: '100%', // Ancho máximo
           height: 'auto', // Mantiene proporciones
         }}
-      />
+      /> */}
       </Grid>
     </Box>
   )

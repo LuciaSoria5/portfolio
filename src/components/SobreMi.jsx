@@ -71,7 +71,7 @@ export const SobreMi = () => {
         >
           <Box
             component='img'
-            src='/computadora.png'
+            src='/img/computadora.png'
             alt='Imagen'
             sx={{
               width: '100%', // Imagen ocupa todo el ancho disponible
@@ -84,7 +84,7 @@ export const SobreMi = () => {
 
         <Box
         component='img'
-        src='/guarda.png'
+        src='/img/guarda.png'
         alt='Imagen'
         sx={{
           width: '70%', // Imagen ocupa todo el ancho disponible
