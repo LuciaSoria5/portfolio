@@ -17,6 +17,7 @@ export const Proyectos = () => {
             container
             justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
+                mt: 2,
                 padding: '20px', // Espacio alrededor de todo el contenido
             }}
         >

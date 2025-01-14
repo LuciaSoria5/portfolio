@@ -18,11 +18,11 @@ export const MiPortfolio = () => {
       }}
     >
       <Navbar />
-      <section id="presentacion"><Presentacion/> </section>
-      <section id="sobre-mi"> <SobreMi id="sobre-mi" /> </section>
-      <section id="mas-detalles"><Tecnologias id="tecnologias" /> </section>
-      <section id="proyectos"><Proyectos id="proyectos"/> </section>
-      <section id="contacto"><Contacto id="contacto" /> </section>
+      <section className= "animate__animated animate__fadeIn" id="presentacion"><Presentacion/> </section>
+      <section className= "animate__animated animate__fadeInLeft" id="sobre-mi"> <SobreMi id="sobre-mi" /> </section>
+      <section className= "animate__animated animate__fadeInRight" id="mas-detalles"><Tecnologias id="tecnologias" /> </section>
+      <section className= "animate__animated animate__fadeInLeft" id="proyectos"><Proyectos id="proyectos"/> </section>
+      <section className= "animate__animated animate__fadeIn" id="contacto"><Contacto id="contacto" /> </section>
     </Box>
   )
 }
