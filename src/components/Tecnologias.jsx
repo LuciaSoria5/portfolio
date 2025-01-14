@@ -29,7 +29,7 @@ export const Tecnologias = () => {
                         textAlign: 'center'
                     }}
                 >
-                   Más información
+                   Más detalles
                 </Typography>
             </Box>
             <Box

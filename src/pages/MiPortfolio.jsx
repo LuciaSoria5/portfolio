@@ -20,7 +20,7 @@ export const MiPortfolio = () => {
       <Navbar />
       <section id="presentacion"><Presentacion/> </section>
       <section id="sobre-mi"> <SobreMi id="sobre-mi" /> </section>
-      <section id="tecnologias"><Tecnologias id="tecnologias" /> </section>
+      <section id="mas-detalles"><Tecnologias id="tecnologias" /> </section>
       <section id="proyectos"><Proyectos id="proyectos"/> </section>
       <section id="contacto"><Contacto id="contacto" /> </section>
     </Box>

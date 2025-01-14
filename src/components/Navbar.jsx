@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import Face3Icon from '@mui/icons-material/Face3';
 import ComputerIcon from '@mui/icons-material/Computer';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import WorkIcon from '@mui/icons-material/Work';
 
 const textoEstiloChico = {
     fontFamily: 'Andale Mono, monospace',
@@ -114,7 +115,7 @@ export const Navbar = () => {
                             Lucía Soria
                         </Typography>
                     </HashLink>
-    {/*  --------------------------------- CHICO ----------------------------------------------------  */}
+                    {/*  --------------------------------- CHICO ----------------------------------------------------  */}
                     <Box
                         sx={{
                             flexGrow: 1,
@@ -163,13 +164,25 @@ export const Navbar = () => {
                                 </HashLink>
                             </Box>
 
+
+                            <Box sx={boxHashEstiloChico}>
+                                <HashLink
+                                    to={"/LuciaSoria#mas-detalles"}
+                                    scroll={scrollWithOffset}
+                                    style={hashEstiloChico}
+                                >
+                                    <ComputerIcon sx={{ color: 'primary.main' }} />
+                                    <Typography variant='h6' sx={textoEstiloChico}>Más detalles</Typography>
+                                </HashLink>
+                            </Box>
+
                             <Box sx={boxHashEstiloChico}>
                                 <HashLink
                                     to={"/LuciaSoria#proyectos"}
                                     scroll={scrollWithOffset}
                                     style={hashEstiloChico}
                                 >
-                                    <ComputerIcon sx={{ color: 'primary.main' }} />
+                                    <WorkIcon sx={{ color: 'primary.main' }} />
                                     <Typography variant='h6' sx={textoEstiloChico}>Proyectos</Typography>
                                 </HashLink>
                             </Box>
@@ -186,31 +199,39 @@ export const Navbar = () => {
                             </Box>
                         </Menu>
                     </Box>
-
-                    <HashLink
-                        to={"/LuciaSoria#top"}
-                        style={{ textDecoration: 'none' }}
-                        scroll={scrollWithOffset}
+                    <Box
+                        sx={{
+                            textAlign: 'center',
+                            justifyItems: 'center',
+                            display: 'flex',
+                            flexGrow: 1,
+                        }}
                     >
-                        <Typography
-                            variant="h4"
-                            noWrap
-                            role="button"
-                            sx={{
-                                mr: 2,
-                                display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1,
-                                fontWeight: 700,
-                                textDecoration: 'none',
-                                fontFamily: 'Georgia, serif',
-                                color: 'primary.color'
-                            }}
+                        <HashLink
+                            to={"/LuciaSoria#top"}
+                            style={{ textDecoration: 'none' }}
+                            scroll={scrollWithOffset}
                         >
-                            Lucía Soria
-                        </Typography>
-                    </HashLink>
+                            <Typography
+                                variant="h4"
+                                noWrap
+                                role="button"
+                                sx={{
+                                    mr: 2,
+                                    display: { xs: 'flex', md: 'none' },
+                                    flexGrow: 1,
+                                    fontWeight: 700,
+                                    textDecoration: 'none',
+                                    fontFamily: 'Georgia, serif',
+                                    color: 'primary.color'
+                                }}
+                            >
+                                Lucía Soria
+                            </Typography>
+                        </HashLink>
+                    </Box>
 
-    {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
+                    {/*  --------------------------------- GRANDE ----------------------------------------------------  */}
                     <Box
                         justifyContent="end"
                         sx={{
@@ -232,11 +253,22 @@ export const Navbar = () => {
 
                         <Box sx={boxHashEstiloGrande}>
                             <HashLink
-                                to={"/LuciaSoria#proyectos"}
+                                to={"/LuciaSoria#mas-detalles"}
                                 scroll={scrollWithOffset}
                                 style={hashEstiloGrande}
                             >
                                 <ComputerIcon sx={{ color: 'primary.color' }} />
+                                <Typography sx={textoEstiloGrande}>Más detalles</Typography>
+                            </HashLink>
+                        </Box>
+
+                        <Box sx={boxHashEstiloGrande}>
+                            <HashLink
+                                to={"/LuciaSoria#proyectos"}
+                                scroll={scrollWithOffset}
+                                style={hashEstiloGrande}
+                            >
+                                <WorkIcon sx={{ color: 'primary.color' }} />
                                 <Typography sx={textoEstiloGrande}>Proyectos</Typography>
                             </HashLink>
                         </Box>
