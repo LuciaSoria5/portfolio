@@ -9,7 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import LanguageIcon from '@mui/icons-material/Language';
-import { useMediaQuery } from '@mui/material';
+import { Tooltip, useMediaQuery } from '@mui/material';
 import { Block } from '@mui/icons-material';
 
 export const Proyecto = ({ proyecto }) => {
@@ -92,6 +92,7 @@ export const Proyecto = ({ proyecto }) => {
                 }}>
                 {
                   sitio && (
+                    <Tooltip title="Visitar sitio web">
                     <IconButton
                       role="button"
                       variant="contained"
@@ -99,8 +100,10 @@ export const Proyecto = ({ proyecto }) => {
                     >
                       <LanguageIcon fontSize="large" />
                     </IconButton>
+                    </Tooltip>
                   )
                 }
+                <Tooltip title="Ver repositorio">
                 <IconButton
                   role="button"
                   variant="contained"
@@ -117,6 +120,7 @@ export const Proyecto = ({ proyecto }) => {
                       />
                     )}
                 </IconButton>
+                </Tooltip>
               </Box>
               <CardMedia
                 component="img"
@@ -175,6 +179,7 @@ export const Proyecto = ({ proyecto }) => {
               }}>
               {
                 sitio && (
+                  <Tooltip title="Visitar sitio web">
                   <IconButton
                     role="button"
                     variant="contained"
@@ -182,8 +187,10 @@ export const Proyecto = ({ proyecto }) => {
                   >
                     <LanguageIcon fontSize="large" />
                   </IconButton>
+                  </Tooltip>
                 )
               }
+              <Tooltip title="Ver repositorio">
               <IconButton
                 role="button"
                 variant="contained"
@@ -199,6 +206,7 @@ export const Proyecto = ({ proyecto }) => {
                   />
                 )}
               </IconButton>
+              </Tooltip>
             </Box>
 
             <CardContent

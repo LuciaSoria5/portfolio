@@ -13,6 +13,8 @@ export const tema = createTheme({
         primary: {
             main: '#2e1e45', // morado
             color: '#ececec', // gris claro
+            fucsia: '#ba3259',
+            negroRosa: '#000000',
         },
         purple: { // violeta
             color: '#612a52',

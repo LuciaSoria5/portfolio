@@ -40,7 +40,8 @@ export const SobreMi = () => {
           md={8}
           justifyContent='center'
           alignItems='center'
-          textAlign={isSmallScreen ? 'center' : 'left'}
+          // textAlign={isSmallScreen ? 'center' : 'left'}
+          textAlign='center'
         >
           <Box sx={{ padding: '16px' }}>
             <Typography

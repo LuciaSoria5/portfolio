@@ -5,6 +5,8 @@
   --salmon: #ff695c;
   --caqui: #ccbca1;
   --gris: #ececec;
+  --grisRosado: #ead1eb;
+  --blanco: #ffffff;
 }
 
 body {
@@ -24,7 +26,7 @@ h3 {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--gris);
+  background-color: var(--grisRosado);
   box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
@@ -49,15 +51,15 @@ h3 {
 }
 
 .mySwiper .swiper-pagination-bullets .swiper-pagination-bullet {
-  background-color: var(--caqui);
+  background-color: var(--blanco);
 }
 
 .mySwiper .swiper-button-next {
-  color: var(--caqui);
+  color: var(--grisRosado);
 }
 
 .mySwiper .swiper-button-prev {
-  color: var(--caqui);
+  color: var(--grisRosado);
 }
 
 .fadeInFadeOut {

@@ -1,11 +1,12 @@
-import { Box, Grid, IconButton, Typography } from '@mui/material'
+import { Box, Grid, IconButton, Tooltip, Typography } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-const colorIconos = 'primary.main';
+// const colorIconos = 'primary.main';
+const colorIconos = 'primary.negroRosa'
 
 export const Contacto = () => {
     return (
@@ -37,29 +38,35 @@ export const Contacto = () => {
                         padding: '5px',
                         color: 'primary.main',
                         backgroundColor: 'grey.grisClaro',
-                        borderRadius: '2%'
+                        borderRadius: '5%'
                     }}>
-                    <IconButton
-                        role="button"
-                        variant="contained"
-                        onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
-                    >
-                        <LinkedInIcon fontSize="large" sx={{ color: colorIconos }} />
-                    </IconButton>
-                    <IconButton
-                        role="button"
-                        variant="contained"
-                        onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
-                    >
-                        <GitHubIcon fontSize="large" sx={{ color: colorIconos }} />
-                    </IconButton>
-                    <IconButton
-                        role="button"
-                        variant="contained"
-                        onClick={() => window.open("https://gitlab.com/LuciaSoria", "_blank", "noopener noreferrer")}
-                    >
-                        <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{ color: '#2e1e45' }} />
-                    </IconButton>
+                    <Tooltip title="Ver perfil en LinkedIn">
+                        <IconButton
+                            role="button"
+                            variant="contained"
+                            onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
+                        >
+                            <LinkedInIcon fontSize="large" sx={{  }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Ir a GitHub">
+                        <IconButton
+                            role="button"
+                            variant="contained"
+                            onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
+                        >
+                            <GitHubIcon fontSize="large" sx={{ }} />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Ir a GitLab">
+                        <IconButton
+                            role="button"
+                            variant="contained"
+                            onClick={() => window.open("https://gitlab.com/LuciaSoria", "_blank", "noopener noreferrer")}
+                        >
+                            <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{  }} />
+                        </IconButton>
+                    </Tooltip>
                 </Box>
                 <Box
                     sx={{
