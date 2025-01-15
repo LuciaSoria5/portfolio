@@ -1,5 +1,5 @@
-import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
+import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { descripcion } from '../info/sobreMi';
 
 export const SobreMi = () => {
@@ -17,6 +17,7 @@ export const SobreMi = () => {
   return (
     <Box
       sx={{
+        minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -42,9 +43,9 @@ export const SobreMi = () => {
           textAlign={isSmallScreen ? 'center' : 'left'}
         >
           <Box sx={{ padding: '16px' }}>
-            <Typography 
-              variant='h2' 
-              component='div' 
+            <Typography
+              variant='h2'
+              component='div'
               gutterBottom
               sx={{
                 fontFamily: 'Georgia, serif',
@@ -52,12 +53,25 @@ export const SobreMi = () => {
             >
               Sobre mí
             </Typography>
-            {desc.map(parrafo => (
-              <Typography variant='body1' fontSize={20} key={getCont()} fontFamily={'Andale Mono, monospace'}>
-                {parrafo}
-              </Typography>
-            ))}
-
+            <Box
+              sx={{
+                padding: '16px',
+                color: 'primary.main',
+                backgroundColor: 'grey.grisClaro',
+                borderRadius: '2%'
+              }}
+            >
+              {desc.map(parrafo => (
+                <Typography
+                  variant='body1'
+                  fontSize={20}
+                  key={getCont()}
+                  fontFamily={'Andale Mono, monospace'}
+                >
+                  {parrafo}
+                </Typography>
+              ))}
+            </Box>
           </Box>
         </Grid>
 
@@ -82,7 +96,7 @@ export const SobreMi = () => {
           />
         </Grid>
 
-        <Box
+        {/* <Box
         component='img'
         src='/img/guarda.png'
         alt='Imagen'
@@ -91,7 +105,7 @@ export const SobreMi = () => {
           maxWidth: '100%', // Ancho máximo
           height: 'auto', // Mantiene proporciones
         }}
-      />
+      /> */}
       </Grid>
     </Box>
   );

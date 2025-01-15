@@ -13,11 +13,14 @@ export const Proyectos = () => {
     const listaProyectos = proyectos;
 
     return (
-        <Grid
+        <Box
             container
             justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
-                mt: 2,
+                minHeight: '100vh',
+                alignItems: 'center',
+                justifyContent: 'center',
+                // mt: 2,
                 padding: '20px', // Espacio alrededor de todo el contenido
             }}
         >
@@ -58,7 +61,7 @@ export const Proyectos = () => {
                     ))
                 }
             </Swiper>
-            <Box
+            {/* <Box
                 component='img'
                 src='/img/guarda.png'
                 alt='Imagen'
@@ -67,7 +70,7 @@ export const Proyectos = () => {
                     maxWidth: '100%', // Ancho máximo
                     height: 'auto', // Mantiene proporciones
                 }}
-            />
-        </Grid>
+            /> */}
+        </Box>
     );
 }

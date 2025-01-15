@@ -11,6 +11,7 @@ export const Tecnologias = () => {
             direction="column"
             justifyContent="center"
             sx={{
+                minHeight: '100vh',
                 flexGrow: 1,
             }}
         >
