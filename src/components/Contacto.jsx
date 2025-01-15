@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
+const colorIconos = 'primary.main';
+
 export const Contacto = () => {
     return (
         <Grid
@@ -31,28 +33,32 @@ export const Contacto = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        mb:2
+                        mb: 2,
+                        padding: '5px',
+                        color: 'primary.main',
+                        backgroundColor: 'grey.grisClaro',
+                        borderRadius: '2%'
                     }}>
                     <IconButton
                         role="button"
                         variant="contained"
                         onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
                     >
-                        <LinkedInIcon fontSize="large" sx={{ color: 'primary.color' }} />
+                        <LinkedInIcon fontSize="large" sx={{ color: colorIconos }} />
                     </IconButton>
                     <IconButton
                         role="button"
                         variant="contained"
                         onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
                     >
-                        <GitHubIcon fontSize="large" sx={{ color: 'primary.color' }} />
+                        <GitHubIcon fontSize="large" sx={{ color: colorIconos }} />
                     </IconButton>
                     <IconButton
                         role="button"
                         variant="contained"
                         onClick={() => window.open("https://gitlab.com/LuciaSoria", "_blank", "noopener noreferrer")}
                     >
-                        <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{ color: '#ececec' }} />
+                        <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{ color: '#2e1e45' }} />
                     </IconButton>
                 </Box>
                 <Box

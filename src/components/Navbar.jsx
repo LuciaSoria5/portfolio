@@ -72,7 +72,7 @@ const hashEstiloGrande = {
     padding: '8px',
 }
 
-export const Navbar = ( {img} ) => {
+export const Navbar = ( {styleImg} ) => {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -93,10 +93,7 @@ export const Navbar = ( {img} ) => {
     return (
         <AppBar
             position="fixed"
-            style={{
-                backgroundImage: `url(${img})`,
-                // backgroundSize: "cover",
-            }}
+            style={ styleImg }
         >
             <Container maxWidth="xl" >
                 <Toolbar disableGutters>

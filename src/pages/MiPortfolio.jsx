@@ -2,18 +2,19 @@ import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from 
 import { Box } from '@mui/material'
 
 import estrellasRosas from '/fondos/estrellasRosas.gif';
-import estrellasAzules from '/fondos/estrellasAzules.gif';
-import estrellasRosasImg from '/fondos/estrellasRosasImg.gif';
+
+import brillosRosas1 from '/fondos/brillosRosas1.jpg';
+import brillosRosas2 from '/fondos/brillosRosas2.jpg';
 import brillos from '/fondos/brillos.jpg';
 import espacio from '/fondos/espacio.jpg';
 import estrellas from '/fondos/estrellas.jpg';
 import rosa from '/fondos/rosa.jpg';
 
 
-const imgNavbar = espacio;
+const imgNavbar = brillosRosas1;
 const imgPresentacion = estrellasRosas;
-const imgFondo = estrellas;
-const imgContacto = estrellas;
+const imgFondo = brillosRosas1;
+const imgContacto = brillosRosas2;
 
 export const MiPortfolio = () => {
 
@@ -31,15 +32,21 @@ export const MiPortfolio = () => {
         color: 'primary.color',
       }}
     >
-      <Navbar img={ imgNavbar } />
+      <Navbar
+        styleImg={
+          { 
+            backgroundImage: `url(${imgNavbar})`, 
+            // backgroundColor: '#000000'
+          }
+        } />
       <section
         className="animate__animated animate__fadeIn"
         id="presentacion"
         style={{
           // height: '100vh',
           backgroundImage: `url(${imgPresentacion})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          // backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
         }}
       >
         <Presentacion /> </section>
@@ -83,6 +90,7 @@ export const MiPortfolio = () => {
         style={{
           // height: '100vh',
           backgroundImage: `url(${imgContacto})`,
+          // backgroundPosition: 'left bottom',
           // backgroundRepeat: "no-repeat",
           // backgroundSize: "cover",
         }}>
