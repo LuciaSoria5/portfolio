@@ -65,7 +65,7 @@ export const Proyecto = ({ proyecto }) => {
                   width: '100%', // Hace que ocupe todo el ancho disponible
                   wordWrap: 'break-word', // Permite que las palabras largas se dividan en la siguiente línea
                   whiteSpace: 'normal', // Permite que el texto se divida en varias líneas
-                  fontFamily:'Andale Mono, monospace',
+                  fontFamily: 'Andale Mono, monospace',
                 }}
               >
                 {textoHerramientas}
@@ -93,33 +93,33 @@ export const Proyecto = ({ proyecto }) => {
                 {
                   sitio && (
                     <Tooltip title="Visitar sitio web">
-                    <IconButton
-                      role="button"
-                      variant="contained"
-                      onClick={() => window.open(sitio, "_blank", "noopener noreferrer")}
-                    >
-                      <LanguageIcon fontSize="large" />
-                    </IconButton>
+                      <IconButton
+                        role="button"
+                        variant="contained"
+                        onClick={() => window.open(sitio, "_blank", "noopener noreferrer")}
+                      >
+                        <LanguageIcon fontSize="large" />
+                      </IconButton>
                     </Tooltip>
                   )
                 }
                 <Tooltip title="Ver repositorio">
-                <IconButton
-                  role="button"
-                  variant="contained"
-                  onClick={() => window.open(repositorio, "_blank", "noopener noreferrer")}
-                >
-                  {git === "GitHub" ? (
-                    <GitHubIcon fontSize="large" />
-                  )
-                    : (
-                      <FontAwesomeIcon
-                        icon={faSquareGitlab}
-                        size="xl"
-                        style={{ color: "#808080" }}
-                      />
-                    )}
-                </IconButton>
+                  <IconButton
+                    role="button"
+                    variant="contained"
+                    onClick={() => window.open(repositorio, "_blank", "noopener noreferrer")}
+                  >
+                    {git === "GitHub" ? (
+                      <GitHubIcon fontSize="large" />
+                    )
+                      : (
+                        <FontAwesomeIcon
+                          icon={faSquareGitlab}
+                          size="xl"
+                          style={{ color: "#808080" }}
+                        />
+                      )}
+                  </IconButton>
                 </Tooltip>
               </Box>
               <CardMedia
@@ -180,32 +180,32 @@ export const Proyecto = ({ proyecto }) => {
               {
                 sitio && (
                   <Tooltip title="Visitar sitio web">
-                  <IconButton
-                    role="button"
-                    variant="contained"
-                    onClick={() => window.open(sitio, "_blank", "noopener noreferrer")}
-                  >
-                    <LanguageIcon fontSize="large" />
-                  </IconButton>
+                    <IconButton
+                      role="button"
+                      variant="contained"
+                      onClick={() => window.open(sitio, "_blank", "noopener noreferrer")}
+                    >
+                      <LanguageIcon fontSize="large" />
+                    </IconButton>
                   </Tooltip>
                 )
               }
               <Tooltip title="Ver repositorio">
-              <IconButton
-                role="button"
-                variant="contained"
-                onClick={() => window.open(repositorio, "_blank", "noopener noreferrer")}
-              >
-                {git === "GitHub" ? (
-                  <GitHubIcon fontSize="large" />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faSquareGitlab}
-                    size="xl"
-                    style={{ color: "#808080" }}
-                  />
-                )}
-              </IconButton>
+                <IconButton
+                  role="button"
+                  variant="contained"
+                  onClick={() => window.open(repositorio, "_blank", "noopener noreferrer")}
+                >
+                  {git === "GitHub" ? (
+                    <GitHubIcon fontSize="large" />
+                  ) : (
+                    <FontAwesomeIcon
+                      icon={faSquareGitlab}
+                      size="xl"
+                      style={{ color: "#808080" }}
+                    />
+                  )}
+                </IconButton>
               </Tooltip>
             </Box>
 
@@ -214,7 +214,7 @@ export const Proyecto = ({ proyecto }) => {
                 alignSelf: 'stretch', // Ocupa todo el ancho
               }}
             >
-              <Typography component="div" variant="h5"  mb={1}>
+              <Typography component="div" variant="h5" mb={1}>
                 {titulo}
               </Typography>
               <Typography variant="body1" component="div" fontSize={20} mb={2}>

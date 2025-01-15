@@ -1,10 +1,25 @@
-import React from 'react';
-import { Box, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import { Box, Button, Grid, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { descripcion } from '../info/sobreMi';
 
 export const SobreMi = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detecta pantallas pequeñas
+  // const [isOverflowing, setIsOverflowing] = useState(false);
+  // const [showFullText, setShowFullText] = useState(false);
+  // const textRef = useRef(null);
+
+  // const handleToggleText = () => {
+  //   setShowFullText(!showFullText);
+  // };
+
+  // useEffect(() => {
+  //   if (textRef.current) {
+  //     const hasOverflow =
+  //       textRef.current.scrollHeight > textRef.current.clientHeight;
+  //     setIsOverflowing(hasOverflow);
+  //   }
+  // }, [textRef]);
 
   const desc = descripcion;
 
@@ -62,16 +77,36 @@ export const SobreMi = () => {
                 borderRadius: '2%'
               }}
             >
-              {desc.map(parrafo => (
-                <Typography
-                  variant='body1'
-                  fontSize={20}
-                  key={getCont()}
-                  fontFamily={'Andale Mono, monospace'}
+              {/* {desc.map(parrafo => ( */}
+              <Typography
+                // ref={textRef}
+                variant='body1'
+                fontSize={20}
+                // key={getCont()}
+                fontFamily={'Andale Mono, monospace'}
+                sx={{
+                  display: '-webkit-box',
+                  WebkitBoxOrient: 'vertical',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  // WebkitLineClamp: showFullText ? 'none' : 10,
+                  // height: showFullText ? 'auto' : '15em', // Ajustar altura dinámica
+                }}
+              >
+                {desc}
+              </Typography>
+              {/* ))} */}
+              {/* { 
+                isOverflowing &&
+                <Button
+                  onClick={handleToggleText}
+                  sx={{ marginTop: 1 }}
+                  variant="text"
+                  color="primary"
                 >
-                  {parrafo}
-                </Typography>
-              ))}
+                  {showFullText ? 'Mostrar menos' : 'Seguir leyendo'}
+                </Button>
+              } */}
             </Box>
           </Box>
         </Grid>
@@ -108,6 +143,6 @@ export const SobreMi = () => {
         }}
       /> */}
       </Grid>
-    </Box>
+    </Box >
   );
 };
