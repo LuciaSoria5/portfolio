@@ -8,7 +8,7 @@ export const Portfolio = () => {
   return (
     // Aca va el Provider:
     // <Provider store = {store}
-    <BrowserRouter>
+    <BrowserRouter basename=''>
       <AppTheme>
           <MisRutas />
       </AppTheme>
