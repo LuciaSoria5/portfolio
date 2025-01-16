@@ -98,7 +98,7 @@ export const Navbar = ( {styleImg} ) => {
             <Container maxWidth="xl" >
                 <Toolbar disableGutters>
                     <HashLink
-                        to={"/LuciaSoria#top"}
+                        to={"/#top"}
                         style={{ textDecoration: 'none' }}
                         scroll={scrollWithOffset}
                     >
@@ -158,7 +158,7 @@ export const Navbar = ( {styleImg} ) => {
                         >
                             <Box sx={boxHashEstiloChico}>
                                 <HashLink
-                                    to={'/LuciaSoria#sobre-mi'}
+                                    to={'#sobre-mi'}
                                     scroll={scrollWithOffset}
                                     style={hashEstiloChico}
                                 >
@@ -170,7 +170,7 @@ export const Navbar = ( {styleImg} ) => {
 
                             <Box sx={boxHashEstiloChico}>
                                 <HashLink
-                                    to={"/LuciaSoria#mas-detalles"}
+                                    to={"/#mas-detalles"}
                                     scroll={scrollWithOffset}
                                     style={hashEstiloChico}
                                 >
@@ -181,7 +181,7 @@ export const Navbar = ( {styleImg} ) => {
 
                             <Box sx={boxHashEstiloChico}>
                                 <HashLink
-                                    to={"/LuciaSoria#proyectos"}
+                                    to={"/#proyectos"}
                                     scroll={scrollWithOffset}
                                     style={hashEstiloChico}
                                 >
@@ -192,7 +192,7 @@ export const Navbar = ( {styleImg} ) => {
 
                             <Box sx={boxHashEstiloChico}>
                                 <HashLink
-                                    to={"/LuciaSoria#contacto"}
+                                    to={"/#contacto"}
                                     scroll={scrollWithOffset}
                                     style={hashEstiloChico}
                                 >
@@ -211,7 +211,7 @@ export const Navbar = ( {styleImg} ) => {
                         }}
                     >
                         <HashLink
-                            to={"/LuciaSoria#top"}
+                            to={"/#top"}
                             style={{ textDecoration: 'none' }}
                             scroll={scrollWithOffset}
                         >
@@ -245,7 +245,7 @@ export const Navbar = ( {styleImg} ) => {
                     >
                         <Box sx={boxHashEstiloGrande}>
                             <HashLink
-                                to={"/LuciaSoria#sobre-mi"}
+                                to={"/#sobre-mi"}
                                 scroll={scrollWithOffset}
                                 style={hashEstiloGrande}
                             >
@@ -256,7 +256,7 @@ export const Navbar = ( {styleImg} ) => {
 
                         <Box sx={boxHashEstiloGrande}>
                             <HashLink
-                                to={"/LuciaSoria#mas-detalles"}
+                                to={"/#mas-detalles"}
                                 scroll={scrollWithOffset}
                                 style={hashEstiloGrande}
                             >
@@ -267,7 +267,7 @@ export const Navbar = ( {styleImg} ) => {
 
                         <Box sx={boxHashEstiloGrande}>
                             <HashLink
-                                to={"/LuciaSoria#proyectos"}
+                                to={"/#proyectos"}
                                 scroll={scrollWithOffset}
                                 style={hashEstiloGrande}
                             >
@@ -278,7 +278,7 @@ export const Navbar = ( {styleImg} ) => {
 
                         <Box sx={boxHashEstiloGrande}>
                             <HashLink
-                                to={"/LuciaSoria#contacto"}
+                                to={"/#contacto"}
                                 scroll={scrollWithOffset}
                                 style={hashEstiloGrande}
                             >
