@@ -3,20 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/material'
 import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
-
-import estrellasRosas from '/fondos/estrellasRosas.gif';
-
-import brillosRosas1 from '/fondos/brillosRosas1.jpg';
-import brillosRosas2 from '/fondos/brillosRosas2.jpg';
-import brillos from '/fondos/brillos.jpg';
-import espacio from '/fondos/espacio.jpg';
-import colores from '/fondos/colores.jpg';
-import azul from '/fondos/azul.jpg';
 import violeta from '/fondos/violeta.jpg';
-import fucsia from '/fondos/fucsia.jpg';
-import estrellas from '/fondos/estrellas.jpg';
-import rosa from '/fondos/rosa.jpg';
-import rosaVerde from '/fondos/rosaVerde.jpg';
 import rosaVioleta from '/fondos/rosaVioleta.jpg';
 
 
