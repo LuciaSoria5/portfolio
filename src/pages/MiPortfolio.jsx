@@ -8,9 +8,7 @@ import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from 
 
 
 const imgNavbar = './fondos/violeta.jpg';
-// const imgPresentacion = brillosRosas1;
 const imgFondo = './fondos/rosaVioleta.jpg';
-// const imgContacto = brillosRosas2;
 
 export const MiPortfolio = () => {
 
