@@ -98,7 +98,7 @@ export const Presentacion = () => {
         >
           <Box
             component='img'
-            src='/img/chica.png'
+            src='./img/chica.png'
             alt='Imagen'
             sx={{
               width: '100%', // Imagen ocupa todo el ancho disponible

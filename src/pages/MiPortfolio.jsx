@@ -3,13 +3,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Box } from '@mui/material'
 import { Contacto, Navbar, Presentacion, Proyectos, SobreMi, Tecnologias } from '../components'
-import violeta from '/fondos/violeta.jpg';
-import rosaVioleta from '/fondos/rosaVioleta.jpg';
+// import violeta from './fondos/violeta.jpg';
+// import rosaVioleta from './fondos/rosaVioleta.jpg';
 
 
-const imgNavbar = violeta;
+const imgNavbar = './fondos/violeta.jpg';
 // const imgPresentacion = brillosRosas1;
-const imgFondo = rosaVioleta;
+const imgFondo = './fondos/rosaVioleta.jpg';
 // const imgContacto = brillosRosas2;
 
 export const MiPortfolio = () => {
