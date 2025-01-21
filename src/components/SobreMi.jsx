@@ -74,7 +74,7 @@ export const SobreMi = () => {
                       WebkitBoxOrient: 'vertical',
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',
-                      WebkitLineClamp: showFullText ? 'none' : 5,
+                      WebkitLineClamp: showFullText ? 'none' : 8,
                     }}
                   >
                     {desc}
@@ -83,6 +83,7 @@ export const SobreMi = () => {
                     display={showFullText ? false : true}
                     onClick={handleToggleText}
                     sx={{
+                      margin: '3px',
                       fontSize: 20,
                       fontFamily: 'Andale Mono, monospace',
                       color: 'primary.main',
