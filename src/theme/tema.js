@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material';
 import { red } from '@mui/material/colors';
 
-// .color1 { #2e1e45 };  MORADO
+// .color1 { #2e1e45 }; MORADO
 // .color2 { #612a52 }; VIOLETA
 // .color3 { #ba3259 }; FUCSIA
 // .color4 { #ff695c }; ROSA/SALMON
@@ -26,6 +26,7 @@ export const tema = createTheme({
         grey: {
             gris: '#8f8f8f',
             grisClaro: '#ececec',
+            grisClaro2: '#e6e3e3',
             caqui: 'ccbca1'
         },
         error: {

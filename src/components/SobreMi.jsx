@@ -5,34 +5,19 @@ import { descripcion } from '../info/sobreMi';
 export const SobreMi = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md')); // Detecta pantallas pequeñas
-  // const [isOverflowing, setIsOverflowing] = useState(false);
-  // const [showFullText, setShowFullText] = useState(false);
-  // const textRef = useRef(null);
 
-  // const handleToggleText = () => {
-  //   setShowFullText(!showFullText);
-  // };
-
-  // useEffect(() => {
-  //   if (textRef.current) {
-  //     const hasOverflow =
-  //       textRef.current.scrollHeight > textRef.current.clientHeight;
-  //     setIsOverflowing(hasOverflow);
-  //   }
-  // }, [textRef]);
+  const [showFullText, setShowFullText] = useState(false);
 
   const desc = descripcion;
 
-  var cont = 0;
-  const getCont = () => {
-    cont = cont + 1;
-    return cont;
+  const handleToggleText = () => {
+    setShowFullText(!showFullText);
   }
 
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        // minHeight: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -69,45 +54,75 @@ export const SobreMi = () => {
             >
               Sobre mí
             </Typography>
-            <Box
-              sx={{
-                padding: '16px',
-                color: 'primary.main',
-                backgroundColor: 'grey.grisClaro',
-                borderRadius: '2%'
-              }}
-            >
-              {/* {desc.map(parrafo => ( */}
-              <Typography
-                // ref={textRef}
-                variant='body1'
-                fontSize={20}
-                // key={getCont()}
-                fontFamily={'Andale Mono, monospace'}
-                sx={{
-                  display: '-webkit-box',
-                  WebkitBoxOrient: 'vertical',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  // WebkitLineClamp: showFullText ? 'none' : 10,
-                  // height: showFullText ? 'auto' : '15em', // Ajustar altura dinámica
-                }}
-              >
-                {desc}
-              </Typography>
-              {/* ))} */}
-              {/* { 
-                isOverflowing &&
-                <Button
-                  onClick={handleToggleText}
-                  sx={{ marginTop: 1 }}
-                  variant="text"
-                  color="primary"
+            { // Pantallas pequeñas
+              (isSmallScreen)
+                ?
+                <Box
+                  sx={{
+                    padding: '16px',
+                    color: 'primary.main',
+                    backgroundColor: 'grey.grisClaro',
+                    borderRadius: '2%'
+                  }}
                 >
-                  {showFullText ? 'Mostrar menos' : 'Seguir leyendo'}
-                </Button>
-              } */}
-            </Box>
+                  <Typography
+                    variant='body1'
+                    fontSize={20}
+                    fontFamily={'Andale Mono, monospace'}
+                    sx={{
+                      display: '-webkit-box',
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      WebkitLineClamp: showFullText ? 'none' : 5,
+                    }}
+                  >
+                    {desc}
+                  </Typography>
+                  <Button
+                    display={showFullText ? false : true}
+                    onClick={handleToggleText}
+                    sx={{
+                      fontSize: 20,
+                      fontFamily: 'Andale Mono, monospace',
+                      color: 'primary.main',
+                      backgroundColor: 'grey.grisClaro2',
+                    }}
+                  >
+                    { !showFullText
+                      ?
+                      "Seguir leyendo"
+                      :
+                      "Ver menos"
+                    }
+                  </Button>
+                </Box>
+                // Pantallas grandes
+                :
+                <Box
+                  sx={{
+                    padding: '16px',
+                    color: 'primary.main',
+                    backgroundColor: 'grey.grisClaro',
+                    borderRadius: '2%'
+                  }}
+                >
+                  <Typography
+                    variant='body1'
+                    fontSize={20}
+                    fontFamily={'Andale Mono, monospace'}
+                    sx={{
+                      display: '-webkit-box',
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {desc}
+                  </Typography>
+                </Box>
+
+            }
           </Box>
         </Grid>
 
