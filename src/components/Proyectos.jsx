@@ -17,7 +17,7 @@ export const Proyectos = () => {
             container
             justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
-                minHeight: '100vh',
+                // minHeight: '90vh',
                 alignItems: 'center',
                 justifyContent: 'center',
                 // mt: 2,

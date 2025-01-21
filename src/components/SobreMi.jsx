@@ -17,7 +17,7 @@ export const SobreMi = () => {
   return (
     <Box
       sx={{
-        // minHeight: '100vh',
+        minHeight: '90vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -80,6 +80,7 @@ export const SobreMi = () => {
                     {desc}
                   </Typography>
                   <Button
+                    variant="outlined"
                     display={showFullText ? false : true}
                     onClick={handleToggleText}
                     sx={{

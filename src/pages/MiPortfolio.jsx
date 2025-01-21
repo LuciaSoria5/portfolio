@@ -14,7 +14,7 @@ export const MiPortfolio = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Duración en ms
+      duration: 2000, // Duración en ms
       once: false,     // Ejecutar la animación solo una vez
       mirror: false,
     });

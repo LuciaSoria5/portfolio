@@ -38,7 +38,7 @@ export const Proyecto = ({ proyecto }) => {
               display: 'block',          // Usa flexbox para manejar los iconos
               alignItems: 'center',     // Centra los iconos horizontalmente
               width: '100%',  // El ancho será controlado por el `Grid`
-              height: 300,    // Fija la altura
+              height: 350,    // Fija la altura
               overflowY: 'auto',
               overflowX: 'auto',
             }}
