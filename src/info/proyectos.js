@@ -26,6 +26,14 @@ export const proyectos = [
         git: 'GitHub'
     },
     {
+        titulo: 'Porgramación lineal: BigData',
+        herramientas: ['Python', 'PySCIPOpt, SCIP'],
+        descripcion: 'En este trabajo práctico se buscó aplicar conceptos de modelado y optimización mediante programación lineal. A través de problemas sobre gestión de archivos en una empresa, se diseñaron soluciones eficientes para optimizar recursos como el almacenamiento en discos y la importancia de los datos.',
+        repositorio: 'https://github.com/rondelli/myo-tp.git',
+        imagen: 'progLineal.png',
+        git: 'GitHub'
+    },
+    {
         titulo: 'Domingus',
         herramientas: ['Java', 'Maven', 'PatronesDeDiseño','MVC', 'SOLID'],
         descripcion: 'Proyecto que simula el aviso de modificaciones en la oferta academica de la Universidad Nacional de General Sarmiento a través de un ChatBot desarrollado en Java utilizando distintos patrones de diseño y control de dependencias.',

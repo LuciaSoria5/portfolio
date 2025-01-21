@@ -3,7 +3,7 @@ export const tecnicos = [
         Frontend: [
             { 
                 Lenguajes: ['JavaScript'],
-                'Frameworks y Librerías': ['React', 'React Hooks', 'Redux', 'React Router', 'Context API'],
+                'Frameworks y Librerías': ['React', 'React Hooks', 'Redux', 'React Router', 'Context API', 'MaterialUI', 'Bootstrap'],
                 Testing: ['Jest'],
                 Otros: ['Consumo de APIs REST'] 
             }
@@ -12,8 +12,8 @@ export const tecnicos = [
     {
         Backend: [
             { 
-                Lenguajes: ['Python', 'Java'],
-                Frameworks: ['Django Framework', 'Django ORM', 'Django Rest Framework', 'Autenticación y autorización', 'Formularios'],
+                Lenguajes: ['Python', 'Java', 'C#'],
+                Frameworks: ['.NET', 'Entity Framework', 'Django Framework', 'Django ORM', 'Django Rest Framework', 'Autenticación y autorización', 'Formularios'],
                 Testing: ['Unit', 'Unittest', 'Selenium'] 
             }
         ]
