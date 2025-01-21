@@ -4,15 +4,17 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Email } from '@mui/icons-material';
+import { Mail } from './subcomponents/Mail';
 
 // const colorIconos = 'primary.main';
 const colorIconos = 'primary.negroRosa'
 
 export const Contacto = () => {
     return (
-        <Grid
-            container
-            justifyContent="center" /* Centrar proyectos horizontalmente */
+        <Box
+            // container
+            // justifyContent="center" /* Centrar proyectos horizontalmente */
             sx={{
                 padding: '20px', // Espacio alrededor de todo el contenido
             }}
@@ -29,44 +31,62 @@ export const Contacto = () => {
                 >
                     Contáctame
                 </Typography>
+                <Mail />
+                <Typography
+                    variant='h4'
+                    component='div'
+                    gutterBottom
+                    sx={{
+                        fontFamily: 'Georgia, serif',
+                        textAlign: 'center',
+                    }}
+                >
+                    Visita mis redes
+                </Typography>
                 <Box
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        mb: 2,
-                        padding: '5px',
-                        color: 'primary.main',
-                        backgroundColor: 'grey.grisClaro',
-                        borderRadius: '5%'
-                    }}>
-                    <Tooltip title="Ver perfil en LinkedIn">
-                        <IconButton
-                            role="button"
-                            variant="contained"
-                            onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
-                        >
-                            <LinkedInIcon fontSize="large" sx={{  }} />
-                        </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Ir a GitHub">
-                        <IconButton
-                            role="button"
-                            variant="contained"
-                            onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
-                        >
-                            <GitHubIcon fontSize="large" sx={{ }} />
-                        </IconButton>
-                    </Tooltip>
-                    <Tooltip title="Ir a GitLab">
-                        <IconButton
-                            role="button"
-                            variant="contained"
-                            onClick={() => window.open("https://gitlab.com/LuciaSoria", "_blank", "noopener noreferrer")}
-                        >
-                            <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{  }} />
-                        </IconButton>
-                    </Tooltip>
+                        textAlign: "center", // Centra el contenido dentro del contenedor padre
+                        width: "100%",
+                        mb: "10px",
+                    }}
+                >
+                    <Box
+                        sx={{
+                            display: "inline-flex", // Ajusta el tamaño al contenido
+                            gap: "8px",
+                            padding: "5px",
+                            backgroundColor: "grey.grisClaro",
+                            borderRadius: "8px",
+                        }}
+                    >
+                        <Tooltip title="Ver perfil en LinkedIn">
+                            <IconButton
+                                role="button"
+                                variant="contained"
+                                onClick={() => window.open("https://www.linkedin.com/in/lucía-soria-7a66411b0", "_blank", "noopener noreferrer")}
+                            >
+                                <LinkedInIcon fontSize="large" sx={{}} />
+                            </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Ir a GitHub">
+                            <IconButton
+                                role="button"
+                                variant="contained"
+                                onClick={() => window.open("https://github.com/LuciaSoria5", "_blank", "noopener noreferrer")}
+                            >
+                                <GitHubIcon fontSize="large" sx={{}} />
+                            </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Ir a GitLab">
+                            <IconButton
+                                role="button"
+                                variant="contained"
+                                onClick={() => window.open("https://gitlab.com/LuciaSoria", "_blank", "noopener noreferrer")}
+                            >
+                                <FontAwesomeIcon icon={faSquareGitlab} size="xl" style={{}} />
+                            </IconButton>
+                        </Tooltip>
+                    </Box>
                 </Box>
                 <Box
                     sx={{
@@ -89,7 +109,7 @@ export const Contacto = () => {
                     </Typography>
                 </Box>
             </Box>
-        </Grid>
+        </Box>
 
     )
 }

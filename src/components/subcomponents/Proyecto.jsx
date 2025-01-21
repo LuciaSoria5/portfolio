@@ -35,7 +35,7 @@ export const Proyecto = ({ proyecto }) => {
           <Card
             sx={{
               // flexDirection: 'column', 
-              display: 'block',          // Usa flexbox para manejar los iconos
+              display: 'block',          
               alignItems: 'center',     // Centra los iconos horizontalmente
               width: '100%',  // El ancho será controlado por el `Grid`
               height: 350,    // Fija la altura
