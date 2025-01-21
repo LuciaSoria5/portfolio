@@ -45,7 +45,7 @@ export const Tecnologias = () => {
                             <h3>Conocimientos tecnicos</h3>
                         </button>
                     </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordion" >
+                    <div id="collapseOne" className="accordion-collapse collapse">
                         <div className="accordion-body">
                             <EnumItems json={tecnicos} />
                         </div>
@@ -57,7 +57,7 @@ export const Tecnologias = () => {
                             <h3>Habilidades personales</h3>
                         </button>
                     </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div id="collapseTwo" className="accordion-collapse collapse">
                         <div className="accordion-body">
                             <Habilidades />
                             {/* <EnumItems json={ personales } /> */}
@@ -70,7 +70,7 @@ export const Tecnologias = () => {
                             <h3>Experiencia</h3>
                         </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div id="collapseThree" className="accordion-collapse collapse">
                         <div className="accordion-body">
                             <EnumItems json={experiencia} />
                         </div>
@@ -83,7 +83,7 @@ export const Tecnologias = () => {
                             <h3>Formación Académica</h3>
                         </button>
                     </h2>
-                    <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div id="collapseFour" className="accordion-collapse collapse">
                         <div className="accordion-body">
                             <EnumItems json={educacion} />
                         </div>
