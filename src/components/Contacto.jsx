@@ -4,11 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGitlab } from '@fortawesome/free-brands-svg-icons'
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Email } from '@mui/icons-material';
 import { Mail } from './subcomponents/Mail';
 
 // const colorIconos = 'primary.main';
-const colorIconos = 'primary.negroRosa'
+// const colorIconos = 'primary.negroRosa'
 
 export const Contacto = () => {
     return (

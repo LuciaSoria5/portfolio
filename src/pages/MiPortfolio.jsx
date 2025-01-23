@@ -75,6 +75,7 @@ export const MiPortfolio = () => {
         <Proyectos id="proyectos" /> </section>
 
       <section
+        data-aos="fade-up"
         // className="animate__animated animate__fadeIn"
         id="contacto"
       >
