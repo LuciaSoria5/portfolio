@@ -1,12 +1,19 @@
 ﻿import emailjs from '@emailjs/browser';
+import { getEnvVariables } from './getEnvVariables';
 
 export async function sendEmail(fromName, email, message) {
+
+    const { VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID } = getEnvVariables();
+    // const { VITE_API_URL } = getEnvVariables();
+
+    console.log(VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID)
+
     emailjs.init({
-        publicKey: "1y1fFXJwwd-KWN4Jc",
+        publicKey: VITE_PUBLIC_KEY,
     });
 
     try {
-        await emailjs.send('service_nw8suuk', 'template_8i2njps',
+        await emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID,
             {
                 from_name: fromName,
                 message: message,
