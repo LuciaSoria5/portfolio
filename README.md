@@ -1,8 +1,14 @@
-# React + Vite
+# Mi portfolio - Lucía Soria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vista inicial del sitio](/public/img/vistaInicial.png)
 
-Currently, two official plugins are available:
+Este sitio web fue permite visualizar información sobre mi, como mi experiencia laboral y educación, así como también algunos de mis proyectos favoritos. Cuenta, además con un formulario de contacto a través del cual es posible enviar consultas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mi portfolio fue desplegado utilizando Vercel, y se encuentra disponible en [este link](https://portfolio-luciasoria5s-projects.vercel.app/).
+
+## Características y herramientas
+
+- React 18.3.1
+- Ruteo y protección de rutas utilizando la librería React Router.
+- Uso de Material UI y Bootstrap para lograr un diseño responsivo.
+- Envío de emails utilizando la herramienta EmailJS.
